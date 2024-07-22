@@ -8,8 +8,6 @@ interface ChildComponentProps {
   }
 
 const ChildComponent: React.FC<ChildComponentProps> = ({ children }) => {
-    console.log('useNavbarContext:', useNavbarContext); // Debugging
-
     const { navbarHeight, setNavbarHeight } = useNavbarContext();
   
     return (
