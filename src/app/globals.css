@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,6 +21,10 @@
   --pastel-blue: #A387FF;
   --dark-blue: #171451;
   --soft-grey: #E6E6DD;
+
+  --orange-gradient: #FFC273;
+  --purple-shadow: #B585FF;
+  --border-grey: #363636;
 }
 
 @media (prefers-color-scheme: dark) {

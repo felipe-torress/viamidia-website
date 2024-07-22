@@ -13,7 +13,7 @@
   background-color: rgba(18, 18, 18, 0.3);
   backdrop-filter: blur(25px);
   border-width: 1px;
-  border-color: #363636;
+  border-color: var(--border-grey);
 }
 
 .navbar-logo {
@@ -36,13 +36,14 @@
 .navbar-links a {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   font-size: 24px;
+  transition: 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #ddd;
+  color: var(--electric-pink);
 }
 
 a.navbar-link-button {
@@ -52,19 +53,13 @@ a.navbar-link-button {
   text-decoration: none;
   font-size: 24px;
   padding: 10px 20px;
-  background-color: var(--electric-pink);
+  background: linear-gradient(to right, var(--electric-pink), var(--orange-gradient));
   border-radius: 50px;
-  box-shadow: 0 0 5px var(--electric-pink);
+  transition: 0.3s ease;
 }
 
 a.navbar-link-button:hover {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
   color: white;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 10px 20px;
-  background-color: var(--electric-pink);
-  border-radius: 50px;
-  box-shadow: 0 0 5px var(--electric-pink);
+  box-shadow: 0 0 15px var(--electric-pink);
+  background: linear-gradient(to right, var(--electric-pink), var(--electric-pink));
 }

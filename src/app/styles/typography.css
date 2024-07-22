@@ -1,6 +1,30 @@
 .h1 {
   font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  color: #333;
+  font-weight: 700;
+  font-size: 96px;
+  color: white;
 }
+
+.h1Meddon {
+  font-family: "Meddon";
+  font-weight: 400;
+  color: var(--electric-pink);
+}
+
+.centeredText {
+  text-align: center;
+}
+
+.gradientText {
+  background: linear-gradient(to right, #FF4AD6, #FFC273); /* Define your gradient */
+  -background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent */
+}
+
+/* Change the text selection color for the entire document */
+::selection {
+  background-color: var(--electric-pink); /* Background color of the selection */
+  color: #000000; /* Text color of the selection */
+}
+
