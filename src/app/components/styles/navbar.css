@@ -1,35 +1,19 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  margin: 20px;
+  z-index: 1000;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
   border-radius: 20px;
-  margin: 20px 40px 0px 40px;
   background-color: rgba(18, 18, 18, 0.3);
   backdrop-filter: blur(25px);
-}
-
-.navbar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 22px;
-  padding: 2px;
-  background: linear-gradient(to right,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(255, 65, 214, 0.25) 75%,
-      rgba(255, 194, 115, 0.30) 100%);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    /* Mask out the center content */
-    linear-gradient(#fff 0 0);
-  /* Mask out the border area */
-  -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
-  pointer-events: none;
+  border-width: 1px;
+  border-color: #363636;
 }
 
 .navbar-logo {
@@ -50,11 +34,37 @@
 }
 
 .navbar-links a {
-  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .navbar-links a:hover {
   color: #ddd;
+}
+
+a.navbar-link-button {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: var(--electric-pink);
+  border-radius: 50px;
+  box-shadow: 0 0 5px var(--electric-pink);
+}
+
+a.navbar-link-button:hover {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: var(--electric-pink);
+  border-radius: 50px;
+  box-shadow: 0 0 5px var(--electric-pink);
 }

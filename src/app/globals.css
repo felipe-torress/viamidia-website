@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,19 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #ffc107;
+  --text-color: #333;
+  --background-color: #121212;
+
+  --electric-pink: #FF4AD6;
+  --salmon: #FFA180;
+  --yellow: #F5FC73;
+  --pastel-blue: #A387FF;
+  --dark-blue: #171451;
+  --soft-grey: #E6E6DD;
 }
 
 @media (prefers-color-scheme: dark) {
