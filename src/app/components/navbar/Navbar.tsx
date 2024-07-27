@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import Logo from "../Logo";
-import { useNavbarContext } from "./NavbarContext";
-import "../styles/navbar.css";
+import Logo from "@components/logo/Logo";
+import { useNavbarContext } from "@components/navbar/NavbarContext";
+import styles from "./navbar.module.css";
 
 // Define the Navbar component
 const Navbar: React.FC = () => {
@@ -22,11 +22,11 @@ const Navbar: React.FC = () => {
   }, [navbarRef]);
 
   return (
-    <nav className="navbar" ref={navbarRef}>
-      <div className="navbar-logo">
+    <nav className={styles.navbar} ref={navbarRef}>
+      <div className={styles.navbarLogo}>
         <Logo />
       </div>
-      <ul className="navbar-links">
+      <ul className={styles.navbarLinks}>
         <li>
           <a href="/">Home</a>
         </li>
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
           <a href="/contato">Contato</a>
         </li>
         <li>
-          <a href="/orcamento" className="navbar-link-button">
+          <a href="/orcamento" className={styles.navbarLinkButton}>
             Orçamento
           </a>
         </li>

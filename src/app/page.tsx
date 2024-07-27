@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { useCallback } from "react";
-import { useNavbarContext } from "./components/navbar/NavbarContext";
 import "../app/styles/home.css";
 import "../app/styles/typography.css";
 

@@ -16,12 +16,12 @@
   border-color: var(--border-grey);
 }
 
-.navbar-logo {
+.navbarLogo {
   display: flex;
   align-items: center;
 }
 
-.navbar-links {
+.navbarLinks {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -29,11 +29,11 @@
   padding: 0;
 }
 
-.navbar-links li {
+.navbarLinks li {
   margin: 0;
 }
 
-.navbar-links a {
+.navbarLinks a {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   color: white;
@@ -42,11 +42,11 @@
   transition: 0.3s ease;
 }
 
-.navbar-links a:hover {
+.navbarLinks a:hover {
   color: var(--electric-pink);
 }
 
-a.navbar-link-button {
+a.navbarLinkButton {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   color: black;
@@ -58,7 +58,7 @@ a.navbar-link-button {
   transition: 0.3s ease;
 }
 
-a.navbar-link-button:hover {
+a.navbarLinkButton:hover {
   color: white;
   box-shadow: 0 0 15px var(--electric-pink);
   background: linear-gradient(to right, var(--electric-pink), var(--electric-pink));
