@@ -36,7 +36,7 @@
 .navbarLinks a {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  color: white;
+  color: var(--soft-grey);
   text-decoration: none;
   font-size: 24px;
   transition: 0.3s ease;
