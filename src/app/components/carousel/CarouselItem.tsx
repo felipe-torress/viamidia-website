@@ -8,7 +8,6 @@ interface CarouselItemProps {
   onClick: () => void;
 }
 
-// Define the Navbar component
 const CarouselItem: React.FC<CarouselItemProps> = ({imageUrl, title, onClick}) => {
   return (
     <div className={styles.container} onClick={onClick}>
