@@ -61,14 +61,11 @@ const CarouselWithIndicator: React.FC = () => {
 
   return (
     <div className={styles.carouselContainer} onClick={onClick}>
-      <div className={styles.horizontalCarouselWrapper}>
-        <HorizontalImageCarousel
-          images={mapToImagesList(carouselItems)}
-          currentSlide={currentSlide}
-          onSlideChange={handleSlideChange}
-        />
-        <div className={styles.gradientOverlay}></div>
-      </div>
+      <HorizontalImageCarousel
+        images={mapToImagesList(carouselItems)}
+        currentSlide={currentSlide}
+        onSlideChange={handleSlideChange}
+      />
       <CarouselIndicator
         indicators={mapToCarouselItemIndicatorsList(carouselItems)}
         currentSlide={currentSlide}
