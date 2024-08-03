@@ -3,9 +3,9 @@
 import styles from "./carousel.module.css";
 import typography from "@styles/typography.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel as ReactCarousel } from "react-responsive-carousel";
 import { CarouselItemIndicator } from "./model/models";
 import classNames from "classnames";
+import { useEffect, useState } from "react";
 
 interface VerticalCarouselProps {
   indicators: CarouselItemIndicator[];
@@ -16,20 +16,22 @@ const VerticalIndicatorCarousel: React.FC<VerticalCarouselProps> = ({
   indicators,
   currentSlide,
 }) => {
-  const getNextIndex = () => (currentSlide + 1) % indicators.length;
-  const getSecondNextIndex = () => (currentSlide + 2) % indicators.length;
+  const [currentIndicator, setVisibleString] = useState(indicators[currentSlide].title);
+  const [fadeState, setFadeState] = useState(styles.fadeIn);
+
+  useEffect(() => {
+    setFadeState(styles.fadeOut);
+    const timeout = setTimeout(() => {
+      setVisibleString(indicators[currentSlide].title);
+      setFadeState(styles.fadeIn);
+    }, 500); // duration of the fade-out
+
+    return () => clearTimeout(timeout);
+  }, [currentSlide]);
 
   return (
-    <div className={styles.verticalCarousel}>
-      <div className={classNames(styles.title, styles.titleCurrent, typography.h1)}>
-        {indicators[currentSlide].title}
-      </div>
-      <div className={classNames(styles.title, styles.titleNext, typography.h2)}>
-        {indicators[getNextIndex()].title}
-      </div>
-      <div className={classNames(styles.title, styles.titleSecondNext, typography.h3)}>
-        {indicators[getSecondNextIndex()].title}
-      </div>
+    <div className={classNames(styles.carouselIndicator, fadeState)}>
+      <span className={typography.h1}>{currentIndicator}</span>
     </div>
   );
 };
