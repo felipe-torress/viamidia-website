@@ -1,17 +1,17 @@
 "use client";
 
-import styles from "./carousel.module.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import styles from "./carousel.module.css";
 import { CarouselImage } from "./model/models";
 
-interface HorizontalCarouselProps {
+interface HorizontalImageCarouselProps {
   images: CarouselImage[];
   currentSlide: number;
   onSlideChange: (index: number) => void;
 }
 
-const HorizontalImageCarousel: React.FC<HorizontalCarouselProps> = ({
+const HorizontalImageCarousel: React.FC<HorizontalImageCarouselProps> = ({
   images,
   currentSlide,
   onSlideChange,
@@ -27,15 +27,11 @@ const HorizontalImageCarousel: React.FC<HorizontalCarouselProps> = ({
       showThumbs={false}
       infiniteLoop={true}
       autoPlay={true}
-      emulateTouch={true}
+      emulateTouch={false}
+      interval={10000}
     >
       {images.map((element, index) => (
-        <img
-          key={index}
-          src={element.imageUrl}
-          alt="carousel image"
-          onClick={element.onClick}
-        />
+        <img key={index} src={element.imageUrl} alt="carousel image" />
       ))}
     </ReactCarousel>
   );

@@ -26,12 +26,25 @@
   color: var(--soft-grey);
 }
 
+.bodyLarge {
+  font-size: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--soft-grey);
+}
+
 .centeredText {
   text-align: center;
 }
 
 .gradientText {
-  background: linear-gradient(to right, #FF4AD6, #FFC273); /* Define your gradient */
+  background: linear-gradient(
+    to right,
+    #ff4ad6,
+    #ffc273
+  ); /* Define your gradient */
+  clip: text; /* Clip the background to the text */
+  background-clip: text; /* Clip the background to the text */
   -background-clip: text; /* Clip the background to the text */
   -webkit-background-clip: text; /* Clip the background to the text */
   color: transparent; /* Make the text color transparent */

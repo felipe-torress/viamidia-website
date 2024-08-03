@@ -1,36 +1,47 @@
 "use client";
 
+import styles from "@components/carousel/carousel.module.css";
+import acmPannelsImage from "@images/acm-panels.jpg";
+import adesivagemImage from "@images/adesivagem.jpeg";
+import dimentionalLetterImage from "@images/letra-caixa.jpg";
 import React, { useState } from "react";
 import HorizontalImageCarousel from "./HorizontalImageCarousel";
-import VerticalIndicatorCarousel from "./CarouselIndicator";
-import styles from "@components/carousel/carousel.module.css";
-import { CarouselItem } from "./model/models";
-import { useRouter } from "next/navigation";
 import {
-  mapToImagesList,
   mapToCarouselItemIndicatorsList,
+  mapToImagesList,
 } from "./model/mappers";
-import acmPannelsImage from "@images/acm-panels.jpg";
-import dimentionalLetterImage from "@images/letra-caixa.jpg";
-import adesivagemImage from "@images/adesivagem.jpeg";
+import { CarouselItem } from "./model/models";
+import CarouselIndicator from "./CarouselIndicator";
 
 const CarouselWithIndicator: React.FC = () => {
-    const router = useRouter();
-
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const carouselItems: CarouselItem[] = [
+    {
+      imageUrl: acmPannelsImage.src,
+      title: "Fachadas",
+      description: "A melhor opção para se destacar",
+    },
+    {
+      imageUrl: dimentionalLetterImage.src,
+      title: "Letras Caixa",
+      description:
+        "A alternativa moderna, que pode contar com iluminação integrada",
+    },
+    { imageUrl: adesivagemImage.src, title: "Adesivagem", description: "Sua frota de veículos personalizada com sua identidade visual" },
+  ];
+
+  const onClick = () => {
+    const currentItem = carouselItems[currentSlide];
+    alert(currentItem.title);
+  };
 
   const handleSlideChange = (index: number) => {
     setCurrentSlide(index);
   };
 
-  const carouselItems: CarouselItem[] = [
-    { imageUrl: acmPannelsImage.src, title: "Fachadas", onClick: () => router.push('/servicos/') },
-    { imageUrl: dimentionalLetterImage.src, title: "Letras Caixa", onClick: () => router.push('/servicos/') },
-    { imageUrl: adesivagemImage.src, title: "Adesivagem", onClick: () => router.push('/servicos/') },
-  ];
-
   return (
-    <div className={styles.carouselContainer}>
+    <div className={styles.carouselContainer} onClick={onClick}>
       <div className={styles.horizontalCarouselWrapper}>
         <HorizontalImageCarousel
           images={mapToImagesList(carouselItems)}
@@ -39,7 +50,7 @@ const CarouselWithIndicator: React.FC = () => {
         />
         <div className={styles.gradientOverlay}></div>
       </div>
-      <VerticalIndicatorCarousel
+      <CarouselIndicator
         indicators={mapToCarouselItemIndicatorsList(carouselItems)}
         currentSlide={currentSlide}
       />

@@ -1,14 +1,14 @@
 export interface CarouselItem {
     imageUrl: string;
     title: string;
-    onClick: () => void;
+    description: string;
 }
 
 export interface CarouselImage {
-    imageUrl: string;
-    onClick: () => void;
+    imageUrl: string
 }
 
 export interface CarouselItemIndicator {
-    title: string
+    title: string;
+    description: string;
 }

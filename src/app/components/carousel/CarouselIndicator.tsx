@@ -1,28 +1,30 @@
 "use client";
 
-import styles from "./carousel.module.css";
 import typography from "@styles/typography.module.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { CarouselItemIndicator } from "./model/models";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import styles from "./carousel.module.css";
+import { CarouselItemIndicator } from "./model/models";
 
-interface CarouselIndicator {
+interface CarouselIndicatorProps {
   indicators: CarouselItemIndicator[];
   currentSlide: number;
 }
 
-const VerticalIndicatorCarousel: React.FC<CarouselIndicator> = ({
+const CarouselIndicator: React.FC<CarouselIndicatorProps> = ({
   indicators,
   currentSlide,
 }) => {
-  const [currentIndicator, setVisibleString] = useState(indicators[currentSlide].title);
+  const [currentIndicator, setCurrentIndicator] = useState(
+    indicators[currentSlide]
+  );
   const [fadeState, setFadeState] = useState(styles.fadeIn);
 
   useEffect(() => {
     setFadeState(styles.fadeOut);
     const timeout = setTimeout(() => {
-      setVisibleString(indicators[currentSlide].title);
+      setCurrentIndicator(indicators[currentSlide]);
       setFadeState(styles.fadeIn);
     }, 500); // duration of the fade-out
 
@@ -31,9 +33,12 @@ const VerticalIndicatorCarousel: React.FC<CarouselIndicator> = ({
 
   return (
     <div className={classNames(styles.carouselIndicator, fadeState)}>
-      <span className={typography.h1}>{currentIndicator}</span>
+      <span className={typography.h1}>{currentIndicator.title}</span>
+      <span className={typography.bodyLarge}>
+        {currentIndicator.description}
+      </span>
     </div>
   );
 };
 
-export default VerticalIndicatorCarousel;
+export default CarouselIndicator;
