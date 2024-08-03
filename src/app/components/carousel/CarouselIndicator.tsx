@@ -7,12 +7,12 @@ import { CarouselItemIndicator } from "./model/models";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
 
-interface VerticalCarouselProps {
+interface CarouselIndicator {
   indicators: CarouselItemIndicator[];
   currentSlide: number;
 }
 
-const VerticalIndicatorCarousel: React.FC<VerticalCarouselProps> = ({
+const VerticalIndicatorCarousel: React.FC<CarouselIndicator> = ({
   indicators,
   currentSlide,
 }) => {

@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import HorizontalImageCarousel from "./HorizontalImageCarousel";
-import VerticalIndicatorCarousel from "./VerticalIndicatorCarousel";
+import VerticalIndicatorCarousel from "./CarouselIndicator";
 import styles from "@components/carousel/carousel.module.css";
 import { CarouselItem } from "./model/models";
 import { useRouter } from "next/navigation";
