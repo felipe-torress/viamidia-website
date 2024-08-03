@@ -2,7 +2,7 @@
 
 import styles from "@components/carousel/carousel.module.css";
 import acmPannelsImage from "@images/acm-panels.jpg";
-import adesivagemImage from "@images/adesivagem.jpeg";
+import adesivagemImage from "@images/envelopamento-automotivo.jpg";
 import dimentionalLetterImage from "@images/letra-caixa.jpg";
 import React, { useEffect, useState } from "react";
 import HorizontalImageCarousel from "./HorizontalImageCarousel";
