@@ -4,7 +4,7 @@ import styles from "@components/carousel/carousel.module.css";
 import acmPannelsImage from "@images/acm-panels.jpg";
 import adesivagemImage from "@images/adesivagem.jpeg";
 import dimentionalLetterImage from "@images/letra-caixa.jpg";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import HorizontalImageCarousel from "./HorizontalImageCarousel";
 import {
   mapToCarouselItemIndicatorsList,
@@ -44,6 +44,20 @@ const CarouselWithIndicator: React.FC = () => {
   const handleSlideChange = (index: number) => {
     setCurrentSlide(index);
   };
+
+  const totalPages = carouselItems.length;
+
+  // Function to go to the next page
+  const goToNextPage = () => {
+    setCurrentSlide((prevPage) => (prevPage + 1) % totalPages);
+  };
+
+  // Set up an effect to change the page every 5 seconds
+  useEffect(() => {
+    const timer = setInterval(goToNextPage, 5000);
+    // Clean up the timer on component unmount
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className={styles.carouselContainer} onClick={onClick}>

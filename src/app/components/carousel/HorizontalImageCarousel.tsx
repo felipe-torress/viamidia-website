@@ -26,9 +26,8 @@ const HorizontalImageCarousel: React.FC<HorizontalImageCarouselProps> = ({
       showIndicators={false}
       showThumbs={false}
       infiniteLoop={true}
-      autoPlay={true}
+      autoPlay={false}
       emulateTouch={false}
-      interval={10000}
     >
       {images.map((element, index) => (
         <img key={index} src={element.imageUrl} alt="carousel image" />
