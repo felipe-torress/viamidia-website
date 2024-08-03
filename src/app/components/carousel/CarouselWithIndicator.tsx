@@ -28,7 +28,12 @@ const CarouselWithIndicator: React.FC = () => {
       description:
         "A alternativa moderna, que pode contar com iluminação integrada",
     },
-    { imageUrl: adesivagemImage.src, title: "Adesivagem", description: "Sua frota de veículos personalizada com sua identidade visual" },
+    {
+      imageUrl: adesivagemImage.src,
+      title: "Adesivagem",
+      description:
+        "Sua frota de veículos personalizada com sua identidade visual",
+    },
   ];
 
   const onClick = () => {
