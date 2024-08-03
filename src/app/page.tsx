@@ -1,6 +1,6 @@
 import styles from "@styles/home.module.css";
 import typography from "@styles/typography.module.css";
-import Carousel from "@components/carousel/Carousel"
+import CarouselWithIndicator from "@/app/components/carousel/CarouselWithIndicator"
 import classNames from "classnames";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <Carousel/>
+      <CarouselWithIndicator/>
 
       <div className={styles.clientsCarousel}></div>
     </main>

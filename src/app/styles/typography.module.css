@@ -19,6 +19,13 @@
   line-height: 95px;
 }
 
+.h3 {
+  font-size: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--soft-grey);
+}
+
 .centeredText {
   text-align: center;
 }

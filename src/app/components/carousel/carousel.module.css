@@ -1,25 +1,72 @@
 /* Carousel container */
-.carousel {
-  border-radius: 20px;
-  overflow: hidden;
+.carouselContainer {
+  position: relative; /* Ensure the container is positioned relative */
   margin-top: 120px;
-  user-select: none;
   width: 100%;
-  height: 500px;
+  height: 700px;
+  display: flex;
 }
 
-/* Container for the image and text */
-.container {
+/* Wrapper for the Horizontal Carousel and Overlay */
+.horizontalCarouselWrapper {
   position: relative;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-/* Style for the image */
-.image {
+/* Horizontal Carousel */
+.horizontalCarousel {
+  width: 100%;
+  height: 100%;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Style for the Horizontal Carousel image */
+.horizontalCarousel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Gradient Overlay */
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0));
+  pointer-events: none; /* Allows clicks to pass through the overlay */
+  z-index: 1;
+}
+
+/* Vertical Carousel */
+.verticalCarousel {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 2; /* Ensure it's above the gradient overlay */
+  pointer-events: none; /* Allows clicks to pass through the overlay */
+}
+
+.title {
+  position: absolute;
+  transition: transform 0.5s ease-in-out, font-size 0.5s ease-in-out;
+  white-space: nowrap;
+}
+
+.titleCurrent {
+  transform: translateY(0%);
+}
+
+.titleNext {
+  transform: translateY(100px); /* Adjust this value based on the spacing */
+}
+
+.titleSecondNext {
+  transform: translateY(200px); /* Adjust this value based on the spacing */
 }
 
 /* Style for the text */
@@ -28,13 +75,3 @@
   top: 40px;
   left: 40px;
 }
-
-.gradientOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right,rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.0));
-    pointer-events: none; /* Allows clicks to pass through the overlay */
-  }
