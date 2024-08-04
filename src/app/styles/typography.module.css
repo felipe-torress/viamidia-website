@@ -29,7 +29,21 @@
 .bodyLarge {
   font-size: "Manrope", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
+  color: var(--soft-grey);
+}
+
+.body {
+  font-size: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--soft-grey);
+}
+
+.bodySmall {
+  font-size: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: var(--soft-grey);
 }
 
