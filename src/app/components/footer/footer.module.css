@@ -1,0 +1,9 @@
+.container {
+  position: relative;
+  flex: content;
+  padding: 40px;
+  background-color: var(--soft-grey);
+  width: 100%;
+  height: 700px; /* change it later */
+  flex-direction: column;
+}
