@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import Logo from "@components/logo/Logo";
-import { useNavbarContext } from "@components/navbar/NavbarContext";
+import { useNavbarContext } from "./NavbarContext";
 import styles from "./navbar.module.css";
 
 // Define the Navbar component
