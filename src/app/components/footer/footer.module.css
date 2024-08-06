@@ -33,6 +33,7 @@
   justify-items: center; /* Center items horizontally */
   flex-direction: column;
   width: 100%;
+  gap: 10px;
 }
 
 .socialMediaSection {
@@ -62,4 +63,20 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
+}
+
+.createdBy {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-items: start;
+}
+
+.createdBy p {
+  line-height: 1;
+}
+
+.createdBy img {
+  margin-bottom: 2px;
+  margin-left: 3px;
 }

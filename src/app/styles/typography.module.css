@@ -69,6 +69,11 @@
   text-align: center;
 }
 
+.baseline {
+  line-height: 1; /* Adjust to align with the image */
+  vertical-align: baseline; /* Aligns text baseline */
+}
+
 .gradientText {
   background: linear-gradient(
     to right,
