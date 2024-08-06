@@ -13,8 +13,6 @@ export default function Home() {
       </div>
 
       <CarouselWithIndicator/>
-
-      <div className={styles.clientsCarousel}></div>
     </main>
   );
 }
