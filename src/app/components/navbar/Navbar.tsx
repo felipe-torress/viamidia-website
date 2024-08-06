@@ -31,19 +31,19 @@ const Navbar: React.FC = () => {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/sobre-nos">Sobre Nós</a>
+          <a href="/sobre-nos/">Sobre Nós</a>
         </li>
         <li>
-          <a href="/servicos">Serviços</a>
+          <a href="/servicos/">Serviços</a>
         </li>
         <li>
-          <a href="/cases">Cases</a>
+          <a href="/cases/">Cases</a>
         </li>
         <li>
-          <a href="/contato">Contato</a>
+          <a href="/contato/">Contato</a>
         </li>
         <li>
-          <a href="/orcamento" className={styles.navbarLinkButton}>
+          <a href="/orcamento/" className={styles.navbarLinkButton}>
             Orçamento
           </a>
         </li>
