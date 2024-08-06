@@ -1,5 +1,6 @@
 import OpeningHoursSection from "./OpeningHoursSection";
 import PagesSection from "./PagesSection";
+import SafeWebsiteSection from "./SafeWebsiteSection";
 import SocialMediaSection from "./SocialMediaSection";
 import styles from "./footer.module.css";
 import typography from "@styles/typography.module.css";
@@ -21,6 +22,7 @@ const TopSection: React.FC = () => {
       <SocialMediaSection />
       <PagesSection />
       <OpeningHoursSection />
+      <SafeWebsiteSection />
     </div>
   );
 };
