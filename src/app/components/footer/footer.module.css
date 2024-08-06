@@ -12,7 +12,14 @@
   color: var(--via-midia-black);
 }
 
+.container a {
+  color: var(--via-midia-black);
+}
+
 .topSection {
+  display: flex;
+  justify-content: space-between; /* Distributes space between child elements */
+  align-items: start; /* Aligns items vertically in the center */
   flex-direction: row;
   width: 100%;
 }
@@ -35,4 +42,12 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+
+.pagesSection {
+  display: grid;
+  justify-items: start;
+  align-items: top;
+  flex-direction: column;
+  gap: 5px;
 }
