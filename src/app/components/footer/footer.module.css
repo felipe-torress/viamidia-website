@@ -1,9 +1,38 @@
 .container {
   position: relative;
-  flex: content;
   padding: 40px;
   background-color: var(--soft-grey);
   width: 100%;
-  height: 700px; /* change it later */
   flex-direction: column;
+  display: flex;
+  gap: 40px;
+}
+
+.container p {
+  color: var(--via-midia-black);
+}
+
+.topSection {
+  flex-direction: row;
+  width: 100%;
+}
+
+.bottomSection {
+  display: grid;
+  justify-items: center; /* Center items horizontally */
+  flex-direction: column;
+  width: 100%;
+}
+
+.socialMediaSection {
+  display: grid;
+  justify-items: top start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socialMediaButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
