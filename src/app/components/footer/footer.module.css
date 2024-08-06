@@ -16,6 +16,10 @@
   color: var(--via-midia-black);
 }
 
+.container a:hover {
+  text-decoration: underline;
+}
+
 .topSection {
   display: flex;
   justify-content: space-between; /* Distributes space between child elements */
@@ -53,10 +57,9 @@
 }
 
 .safeWebsiteSection {
-    display: flex;
-    justify-items: start;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
