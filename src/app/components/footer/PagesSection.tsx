@@ -1,28 +1,29 @@
 import typography from "@styles/typography.module.css";
 import styles from "./footer.module.css";
+import Link from "next/link";
 
 const PagesSection: React.FC = () => {
   return (
     <div className={styles.pagesSection}>
       <p className={typography.subHeader2}>Páginas</p>
-      <a className={typography.bodySmall} href="/">
+      <Link className={typography.bodySmall} href="/">
         Home
-      </a>
-      <a className={typography.bodySmall} href="/sobre-nos/">
+      </Link>
+      <Link className={typography.bodySmall} href="/sobre-nos/">
         Sobre Nós
-      </a>
-      <a className={typography.bodySmall} href="/servicos/">
+      </Link>
+      <Link className={typography.bodySmall} href="/servicos/">
         Serviços
-      </a>
-      <a className={typography.bodySmall} href="/cases/">
+      </Link>
+      <Link className={typography.bodySmall} href="/cases/">
         Cases
-      </a>
-      <a className={typography.bodySmall} href="/contato/">
+      </Link>
+      <Link className={typography.bodySmall} href="/contato/">
         Contato
-      </a>
-      <a className={typography.bodySmall} href="/orcamento/">
+      </Link>
+      <Link className={typography.bodySmall} href="/orcamento/">
         Orçamento
-      </a>
+      </Link>
     </div>
   );
 };
