@@ -31,7 +31,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [navbarHeight, setNavbarHeight] = useState<number>(0);
+  const [navbarHeight, setNavbarHeight] = useState<number>(140);
 
   return (
     <NavbarContext.Provider value={{ navbarHeight, setNavbarHeight }}>
