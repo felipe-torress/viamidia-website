@@ -1,11 +1,10 @@
 import typography from "@styles/typography.module.css";
-import classNames from "classnames";
+import Studio1001 from "@vectors/studio1001.svg";
+import styles from "./footer.module.css";
 import OpeningHoursSection from "./OpeningHoursSection";
 import PagesSection from "./PagesSection";
 import SafeWebsiteSection from "./SafeWebsiteSection";
 import SocialMediaSection from "./SocialMediaSection";
-import Studio1001 from "@vectors/studio1001.svg";
-import styles from "./footer.module.css";
 
 const Footer: React.FC = () => {
   return (
@@ -36,7 +35,7 @@ const BottomSection: React.FC = () => {
         <p className={typography.caption}>Criado por</p>
         <Studio1001 />
       </div>
-      <p className={classNames(typography.caption, typography.baseline)}>
+      <p className={typography.caption}>
         Via Midia Comunicação Visual - CNPJ 33.565.366/0001-67
       </p>
     </div>
