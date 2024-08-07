@@ -1,34 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Meddon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --via-midia-black: #201e1e;
 
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --accent-color: #ffc107;
-  --text-color: #333;
   --background-color: #121212;
 
-  --electric-pink: #FF4AD6;
-  --salmon: #FFA180;
-  --yellow: #F5FC73;
-  --pastel-blue: #A387FF;
+  --electric-pink: #ff4ad6;
+  --salmon: #ffa180;
+  --yellow: #f5fc73;
+  --pastel-blue: #a387ff;
   --dark-blue: #171451;
-  --soft-grey: #E6E6DD;
+  --soft-grey: #e6e6dd;
 
-  --orange-gradient: #FFC273;
-  --purple-shadow: #B585FF;
+  --orange-gradient: #ffc273;
+  --purple-shadow: #b585ff;
   --border-grey: #363636;
 }
 
 body {
-  background: linear-gradient(to bottom,  black, var(--background-color));
+  background: linear-gradient(to bottom, black, var(--background-color));
 }
 
 @layer utilities {
@@ -39,7 +33,9 @@ body {
 
 /* Change the text selection color for the entire document */
 ::selection {
-  background-color: var(--electric-pink); /* Background color of the selection */
+  background-color: var(
+    --electric-pink
+  ); /* Background color of the selection */
   color: #000000; /* Text color of the selection */
 }
 

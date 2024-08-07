@@ -33,10 +33,10 @@ const CarouselIndicator: React.FC<CarouselIndicatorProps> = ({
 
   return (
     <div className={classNames(styles.carouselIndicator, fadeState)}>
-      <span className={classNames(typography.h2, styles.carouselIndicatorTitle)}>{currentIndicator.title}</span>
-      <span className={typography.bodyLarge}>
+      <p className={classNames(typography.h2, styles.carouselIndicatorTitle)}>{currentIndicator.title}</p>
+      <p className={typography.body}>
         {currentIndicator.description}
-      </span>
+      </p>
     </div>
   );
 };

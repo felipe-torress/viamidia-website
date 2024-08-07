@@ -1,0 +1,83 @@
+.container {
+  position: relative;
+  padding: 40px;
+  background-color: var(--soft-grey);
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  gap: 40px;
+}
+
+.container p {
+  color: var(--via-midia-black);
+}
+
+.container a {
+  color: var(--via-midia-black);
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between; /* Distributes space between child elements */
+  align-items: start; /* Aligns items vertically in the center */
+  flex-direction: row;
+  width: 100%;
+}
+
+.bottomSection {
+  display: grid;
+  justify-items: center; /* Center items horizontally */
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.socialMediaSection {
+  display: grid;
+  justify-items: top start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socialMediaButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.pagesSection {
+  display: grid;
+  justify-items: start;
+  align-items: top;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.safeWebsiteSection {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.createdBy {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-items: start;
+}
+
+.createdBy p {
+  line-height: 1;
+}
+
+.createdBy svg {
+  width: 80px;
+  margin-bottom: 2px;
+  margin-left: 3px;
+}

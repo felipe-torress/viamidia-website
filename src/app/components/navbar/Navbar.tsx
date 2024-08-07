@@ -2,8 +2,9 @@
 
 import React, { useEffect, useRef } from "react";
 import Logo from "@components/logo/Logo";
-import { useNavbarContext } from "@components/navbar/NavbarContext";
+import { useNavbarContext } from "./NavbarContext";
 import styles from "./navbar.module.css";
+import Link from "next/link";
 
 // Define the Navbar component
 const Navbar: React.FC = () => {
@@ -28,24 +29,24 @@ const Navbar: React.FC = () => {
       </div>
       <ul className={styles.navbarLinks}>
         <li>
-          <a href="/">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <a href="/sobre-nos">Sobre Nós</a>
+          <Link href="/sobre-nos/">Sobre Nós</Link>
         </li>
         <li>
-          <a href="/servicos">Serviços</a>
+          <Link href="/servicos/">Serviços</Link>
         </li>
         <li>
-          <a href="/cases">Cases</a>
+          <Link href="/cases/">Cases</Link>
         </li>
         <li>
-          <a href="/contato">Contato</a>
+          <Link href="/contato/">Contato</Link>
         </li>
         <li>
-          <a href="/orcamento" className={styles.navbarLinkButton}>
+          <Link href="/orcamento/" className={styles.navbarLinkButton}>
             Orçamento
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
