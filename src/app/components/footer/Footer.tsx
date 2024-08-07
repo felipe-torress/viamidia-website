@@ -1,5 +1,5 @@
 import typography from "@styles/typography.module.css";
-import Studio1001 from "@vectors/studio1001.svg";
+import { Studio1001 } from "@components/svgs";
 import styles from "./footer.module.css";
 import OpeningHoursSection from "./OpeningHoursSection";
 import PagesSection from "./PagesSection";
