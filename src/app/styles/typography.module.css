@@ -35,7 +35,7 @@
 
 .bodyLarge {
   font-size: "Manrope", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 24px;
   color: var(--soft-grey);
 }
@@ -43,7 +43,7 @@
 .body {
   font-size: "Manrope", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--soft-grey);
 }
 
@@ -69,11 +69,24 @@
   text-align: center;
 }
 
-.gradientText {
+.linearGradientText {
   background: linear-gradient(
     to right,
     #ff4ad6,
     #ffc273
+  ); /* Define your gradient */
+  clip: text; /* Clip the background to the text */
+  background-clip: text; /* Clip the background to the text */
+  -background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent */
+}
+
+.radialGradientText {
+  background: radial-gradient(
+    circle,
+    #ffc273,
+    #ff4ad6
   ); /* Define your gradient */
   clip: text; /* Clip the background to the text */
   background-clip: text; /* Clip the background to the text */

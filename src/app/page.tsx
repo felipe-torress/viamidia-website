@@ -3,6 +3,7 @@ import GlowingText from "@components/texts/GlowingText";
 import styles from "@styles/home.module.css";
 import typography from "@styles/typography.module.css";
 import classNames from "classnames";
+import ContactUsSection from "@/app/home/ContactUsSection";
 
 export default function Home() {
   return (
@@ -12,7 +13,10 @@ export default function Home() {
           Você sonha,
           <br />a gente
           <span
-            className={classNames(typography.h1Meddon, typography.gradientText)}
+            className={classNames(
+              typography.h1Meddon,
+              typography.linearGradientText
+            )}
           >
             {" "}
             faz
@@ -21,6 +25,8 @@ export default function Home() {
       </GlowingText>
 
       <CarouselWithIndicator />
+
+      <ContactUsSection />
     </main>
   );
 }
