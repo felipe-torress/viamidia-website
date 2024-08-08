@@ -12,7 +12,7 @@
 }
 
 .h2 {
-  font-size: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 64px;
   color: var(--soft-grey);
@@ -20,42 +20,42 @@
 }
 
 .h3 {
-  font-size: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 48px;
   color: var(--soft-grey);
 }
 
 .subHeader2 {
-  font-size: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: var(--soft-grey);
 }
 
 .bodyLarge {
-  font-size: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 24px;
   color: var(--soft-grey);
 }
 
 .body {
-  font-size: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: var(--soft-grey);
 }
 
 .bodySmall {
-  font-size: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: var(--soft-grey);
 }
 
 .caption {
-  font-size: "Manrope", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: var(--soft-grey);
