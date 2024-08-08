@@ -22,6 +22,8 @@
       "@components/*": ["./src/app/components/*"],
       "@styles/*": ["./src/app/styles/*"],
       "@images/*": ["./public/images/*"],
+      "@colors/*": ["./public/colors/*"],
+      "@utils/*": ["./src/app/utils/*"],
     }
   },
   "include": [
