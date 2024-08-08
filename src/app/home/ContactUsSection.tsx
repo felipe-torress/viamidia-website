@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./contactUsSection.module.css";
 import typography from "@styles/typography.module.css";
 import classNames from "classnames";
+import WhatsAppButton from "../components/buttons/WhatsappButton";
+import WazeButton from "../components/buttons/WazeButton";
 
 const ContactUsSection: React.FC = () => {
   return (
@@ -23,9 +25,8 @@ const ContactUsSection: React.FC = () => {
           <p className={typography.bodyLarge}>
             Agende uma visita e tome um cafézinho com a gente:
           </p>
-          // add whatsapp button 
-          // add phone number
-          // add waze button
+          <WhatsAppButton />
+          <WazeButton />
         </div>
       </div>
     </div>
