@@ -3,6 +3,7 @@ import typography from "@styles/typography.module.css";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Logo from "../logo/Logo";
 import styles from "./footer.module.css";
+import constants from "@utils/contants";
 
 const SocialMediaSection: React.FC = () => {
   return (
@@ -10,13 +11,13 @@ const SocialMediaSection: React.FC = () => {
       <Logo />
       <p className={typography.bodySmall}>Visite Nossas Redes</p>
       <div className={styles.socialMediaButtons}>
-        <SocialMediaButton href="https://www.facebook.com/ViaMidiaComunicacaoVisual">
+        <SocialMediaButton href={constants.facebookUrl}>
           <FaFacebook />
         </SocialMediaButton>
-        <SocialMediaButton href="https://www.instagram.com/viamidia_rp/">
+        <SocialMediaButton href={constants.instagramUrl}>
           <FaInstagram />
         </SocialMediaButton>
-        <SocialMediaButton href="https://wa.me/551636350101">
+        <SocialMediaButton href={constants.whatsappUrl}>
           <FaWhatsapp />
         </SocialMediaButton>
       </div>
