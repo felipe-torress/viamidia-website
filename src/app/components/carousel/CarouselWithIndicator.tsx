@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "@components/carousel/carousel.module.css";
-import acmPannelsImage from "@images/acm-panels.jpg";
+import fachadaStrategie from "@images/fachada-strategie1.png";
 import adesivagemImage from "@images/envelopamento-automotivo.jpg";
 import dimentionalLetterImage from "@images/letra-caixa.jpg";
 import React, { useEffect, useState } from "react";
@@ -18,7 +18,7 @@ const CarouselWithIndicator: React.FC = () => {
 
   const carouselItems: CarouselItem[] = [
     {
-      imageUrl: acmPannelsImage.src,
+      imageUrl: fachadaStrategie.src,
       title: "Fachadas",
       description: "A melhor opção para se destacar",
     },
