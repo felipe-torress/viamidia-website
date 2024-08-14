@@ -5,6 +5,7 @@ import classNames from "classnames";
 import WhatsAppButton from "../components/buttons/WhatsappButton";
 import WazeButton from "../components/buttons/WazeButton";
 import InstagramButton from "../components/buttons/InstagramButton";
+import PhoneNumber from "../components/texts/PhoneNumber";
 
 const ContactUsSection: React.FC = () => {
   return (
@@ -26,9 +27,14 @@ const ContactUsSection: React.FC = () => {
           <p className={typography.bodyLarge}>
             Agende uma visita e tome um cafézinho com a gente:
           </p>
+          <PhoneNumber
+            text="(16) 99406-5410"
+            phoneNumberComplete="+5516994065410"
+          />
           <WhatsAppButton />
           <InstagramButton />
           <WazeButton />
+          
         </div>
       </div>
     </div>
