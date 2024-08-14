@@ -4,6 +4,7 @@ import typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import WhatsAppButton from "../components/buttons/WhatsappButton";
 import WazeButton from "../components/buttons/WazeButton";
+import InstagramButton from "../components/buttons/InstagramButton";
 
 const ContactUsSection: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const ContactUsSection: React.FC = () => {
             Agende uma visita e tome um cafézinho com a gente:
           </p>
           <WhatsAppButton />
+          <InstagramButton />
           <WazeButton />
         </div>
       </div>

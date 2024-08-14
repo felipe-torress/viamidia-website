@@ -1,7 +1,7 @@
 .roundedButton {
   display: flex;
   flex-direction: row;
-  justify-items: start;
+  justify-items: center;
   align-items: center;
   gap: 10px;
   padding: 5px 15px;

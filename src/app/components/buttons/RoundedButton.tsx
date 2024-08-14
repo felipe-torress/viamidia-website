@@ -2,13 +2,16 @@ import React from "react";
 import styles from "./roundedButton.module.css";
 import typography from "@styles/typography.module.css";
 import Link from "next/link";
+import colors from "@colors/colors";
+import constants from "@utils/contants";
 
 interface RoundedButtonProps {
   text: string;
   href: string;
   textColor: string;
   iconColor: string;
-  backgroundColor: string;
+  backgroundColor?: string;
+  background?: string;
   icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
 }
 
@@ -17,12 +20,14 @@ const RoundedButton: React.FC<RoundedButtonProps> = ({
   href,
   textColor,
   iconColor,
-  backgroundColor,
   icon: Icon,
+  backgroundColor = colors.black,
+  background,
 }) => {
-  const containerStyle: React.CSSProperties = {
-    backgroundColor: backgroundColor,
-  };
+  const containerStyle: React.CSSProperties =
+    background != undefined
+      ? { background: background }
+      : { backgroundColor: backgroundColor };
 
   const iconStyle: React.CSSProperties = {
     color: iconColor,
