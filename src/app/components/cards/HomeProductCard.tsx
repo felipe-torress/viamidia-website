@@ -31,7 +31,7 @@ const HomeProductCard: React.FC<HomeProductCardProps> = ({
         <h2 className={typography.h3}>{title}</h2>
         <p className={typography.bodyLarge}>{text}</p>
       </div>
-      <Image src={imageSrc} alt={contentDescription} priority />
+      <Image src={imageSrc} alt={contentDescription} height={400} width={300} priority />
     </article>
   );
 };
