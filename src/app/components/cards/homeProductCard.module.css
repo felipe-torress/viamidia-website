@@ -1,0 +1,32 @@
+.cardContainer {
+  display: flex;
+  width: 100%;
+  gap: 80px;
+}
+
+.textLeft {
+  flex-direction: row; /* Default: text on the right, image on the left */
+  justify-content: start;
+  align-items: center;
+}
+
+.textRight {
+  flex-direction: row-reverse; /* Reverse: text on the left, image on the right */
+  justify-content: start;
+  align-items: center;
+}
+
+.cardTextContainer {
+  width: 535px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.cardContainer img {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+}

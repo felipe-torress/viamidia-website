@@ -34,7 +34,6 @@ const ContactUsSection: React.FC = () => {
           <WhatsAppButton />
           <InstagramButton />
           <WazeButton />
-          
         </div>
       </div>
     </div>
