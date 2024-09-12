@@ -42,13 +42,6 @@
   color: var(--soft-grey);
 }
 
-.body {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--soft-grey);
-}
-
 .bodySmall {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
