@@ -21,10 +21,10 @@
   color: var(--soft-grey);
 }
 
-.h3 {
+.subHeader1 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 32px;
   color: var(--soft-grey);
 }
 
