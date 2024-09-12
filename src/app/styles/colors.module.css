@@ -1,3 +1,11 @@
 .via-midia-black {
   color: var(--via-midia-black);
 }
+
+.pastelBlue {
+  color: var(--pastel-blue);
+}
+
+.salmon {
+  color: var(--salmon)
+}

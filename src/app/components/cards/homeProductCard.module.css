@@ -1,0 +1,36 @@
+.cardContainer {
+  display: flex;
+  width: 100%;
+}
+
+.textLeft {
+  flex-direction: row; /* Default: text on the right, image on the left */
+  justify-content: start;
+  align-items: center;
+
+  gap: 80px;
+}
+
+.textRight {
+  flex-direction: row-reverse; /* Reverse: text on the left, image on the right */
+  justify-content: start;
+  align-items: center;
+  gap: 80px;
+}
+
+.cardTextContainer {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: justify;
+  gap: 20px;
+}
+
+.cardContainer img {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}

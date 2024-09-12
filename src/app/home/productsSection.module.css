@@ -1,0 +1,9 @@
+.productsSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    gap: 40px;
+  }

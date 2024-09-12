@@ -4,6 +4,7 @@ import styles from "@styles/home.module.css";
 import typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import ContactUsSection from "@/app/home/ContactUsSection";
+import ProductsSection from "./home/ProductsSection";
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
       </GlowingText>
 
       <CarouselWithIndicator />
+
+      <ProductsSection />
 
       <ContactUsSection />
     </main>
