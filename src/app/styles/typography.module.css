@@ -1,12 +1,13 @@
-.h1 {
+.superHeader {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 72px;
   color: var(--soft-grey);
 }
 
-.h1Meddon {
+.superHeaderMeddon {
   font-family: "Meddon";
+  font-size: 72px;
   font-weight: 400;
   color: var(--electric-pink);
 }
