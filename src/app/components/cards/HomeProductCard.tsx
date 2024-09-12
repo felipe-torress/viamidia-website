@@ -5,16 +5,16 @@ import typography from "@styles/typography.module.css";
 import classNames from "classnames";
 
 interface HomeProductCardProps {
+  Text: React.FC;
   title: string;
-  text: string;
   imageSrc: string;
   contentDescription: string;
   isTextLeftAligned: boolean;
 }
 
 const HomeProductCard: React.FC<HomeProductCardProps> = ({
+  Text,
   title,
-  text,
   imageSrc,
   contentDescription,
   isTextLeftAligned,
@@ -29,9 +29,15 @@ const HomeProductCard: React.FC<HomeProductCardProps> = ({
     >
       <div className={classNames(styles.cardTextContainer)}>
         <h2 className={typography.h3}>{title}</h2>
-        <p className={typography.bodyLarge}>{text}</p>
+        <Text />
       </div>
-      <Image src={imageSrc} alt={contentDescription} height={400} width={300} priority />
+      <Image
+        src={imageSrc}
+        alt={contentDescription}
+        height={400}
+        width={300}
+        priority
+      />
     </article>
   );
 };
