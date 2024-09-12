@@ -67,6 +67,10 @@
   font-weight: 700;
 }
 
+.regular {
+  font-weight: 400;
+}
+
 .centeredText {
   text-align: center;
 }
