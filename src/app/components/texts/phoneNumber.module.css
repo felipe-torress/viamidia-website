@@ -1,20 +1,19 @@
 .phoneNumber {
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-    gap: 5px;
-    padding: 5px 15px;
-    border-radius: 10px;
-    border-color: var(--soft-grey);
-    border-width: 1px;
-  }
-  
-  .roundedButton p {
-    color: var(--soft-grey);
-  }
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 16px;
+  border-radius: 30px;
+  border-color: var(--soft-grey);
+  border-width: 1px;
+}
 
-  .phoneNumber svg {
-    width: 24px;
-  }
-  
+.roundedButton p {
+  color: var(--soft-grey);
+}
+
+.phoneNumber svg {
+  transform: scale(0.75);
+}
