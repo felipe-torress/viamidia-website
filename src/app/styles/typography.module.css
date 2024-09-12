@@ -14,12 +14,11 @@
   color: var(--electric-pink);
 }
 
-.h2 {
+.header1 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 48px;
   color: var(--soft-grey);
-  line-height: 95px;
 }
 
 .h3 {
