@@ -5,6 +5,6 @@
 }
 
 .glowingText h1 {
-  line-height: 95px;
+  line-height: 72px;
   text-shadow: 0 0 100px var(--purple-shadow);
 }
