@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useTransition, animated } from "react-spring";
-import bombomImage from "@images/homeCarousel/Bombom.jpg";
-import dcorImage from "@images/homeCarousel/Dcor.jpg";
-import gibaImage from "@images/homeCarousel/Giba.jpg";
+import bombomImage from "@images/homeImagePager/Bombom.jpg";
+import dcorImage from "@images/homeImagePager/Dcor.jpg";
+import gibaImage from "@images/homeImagePager/Giba.jpg";
 import styles from "./imagePager.module.css";
 import classNames from "classnames";
 
