@@ -2,7 +2,7 @@ import typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import React from "react";
 import ContactsCard from "../components/cards/ContactsCard";
-import styles from "./contactUsSection.module.css";
+import styles from "./contactSection.module.css";
 
 const ContactUsSection: React.FC = () => {
   return (
