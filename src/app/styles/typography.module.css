@@ -1,28 +1,30 @@
-.h1 {
+.header1 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 72px;
+  line-height: 80px;
   color: var(--soft-grey);
 }
 
-.h1Meddon {
+.header1Meddon {
   font-family: "Meddon";
+  font-size: 72px;
   font-weight: 400;
+  line-height: 60px;
   color: var(--electric-pink);
 }
 
-.h2 {
-  font-family: "Manrope", sans-serif;
-  font-weight: 700;
-  font-size: 64px;
-  color: var(--soft-grey);
-  line-height: 95px;
-}
-
-.h3 {
+.header2 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 48px;
+  color: var(--soft-grey);
+}
+
+.subHeader1 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
   color: var(--soft-grey);
 }
 
@@ -36,14 +38,7 @@
 .bodyLarge {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  color: var(--soft-grey);
-}
-
-.body {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--soft-grey);
 }
 
@@ -57,7 +52,7 @@
 .button {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   color: var(--soft-grey);
 }
 
@@ -70,6 +65,10 @@
 
 .bold {
   font-weight: 700;
+}
+
+.regular {
+  font-weight: 400;
 }
 
 .centeredText {
