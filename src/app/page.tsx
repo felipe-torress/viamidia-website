@@ -1,6 +1,6 @@
 "use client"
 
-import ContactUsSection from "@/app/home/ContactUsSection";
+import ContactUsSection from "@/app/home/ContactSection";
 import GlowingText from "@components/texts/GlowingText";
 import styles from "@styles/home.module.css";
 import typography from "@styles/typography.module.css";

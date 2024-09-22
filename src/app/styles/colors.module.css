@@ -6,6 +6,10 @@
   color: var(--pastel-blue);
 }
 
+.electricPink {
+  color: var(--electric-pink);
+}
+
 .salmon {
   color: var(--salmon);
 }
