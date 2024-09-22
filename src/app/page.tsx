@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import ContactUsSection from "@/app/home/ContactSection";
 import GlowingText from "@components/texts/GlowingText";
@@ -6,6 +6,7 @@ import styles from "@styles/home.module.css";
 import typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import ImagePager from "./components/imagePager/ImagePager";
+import ClientsSection from "./home/ClientsSection";
 import ServicesSection from "./home/ServicesSection";
 
 export default function Home() {
@@ -30,6 +31,8 @@ export default function Home() {
       <ImagePager />
 
       <ServicesSection />
+
+      <ClientsSection />
 
       <ContactUsSection />
     </main>
