@@ -6,7 +6,7 @@ import colors from "@styles/colors.module.css";
 import typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import React from "react";
-import styles from "./productsSection.module.css";
+import styles from "./servicesSection.module.css";
 
 const ProductsSection: React.FC = () => {
   return (
