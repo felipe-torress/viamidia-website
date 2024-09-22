@@ -1,10 +1,10 @@
 .glowingText {
-  margin-top: 40px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
 }
 
 .glowingText h1 {
-  line-height: 72px;
+  line-height: 95px;
   text-shadow: 0 0 100px var(--purple-shadow);
 }

@@ -21,7 +21,7 @@ const SocialMediaSection: React.FC = () => {
           <FaWhatsapp />
         </SocialMediaButton>
       </div>
-      <p className={typography.caption}>
+      <p className={typography.bodySmall}>
         © 2024 - Via Midia Comunicação Visual.
         <br />
         Todos os direitos reservados

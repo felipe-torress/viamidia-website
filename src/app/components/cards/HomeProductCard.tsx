@@ -28,7 +28,7 @@ const HomeProductCard: React.FC<HomeProductCardProps> = ({
       className={classNames(styles.cardContainer, containerAlignmentClassName)}
     >
       <div className={classNames(styles.cardTextContainer)}>
-        <h2 className={typography.subHeader1}>{title}</h2>
+        <h2 className={typography.h3}>{title}</h2>
         <Text />
       </div>
       <Image

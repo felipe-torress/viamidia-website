@@ -3,12 +3,12 @@
   flex-direction: row;
   justify-items: center;
   align-items: center;
-  gap: 4px;
-  padding: 4px 16px;
+  gap: 10px;
+  padding: 5px 15px;
   border-radius: 30px;
 }
 
 .roundedButton svg {
-  height: 18px;
-  width: 18px;
+  height: 24px;
+  width: 24px;
 }
