@@ -1,12 +1,12 @@
-.superHeader {
+.header1 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 72px;
-  line-height: 60px;
+  line-height: 80px;
   color: var(--soft-grey);
 }
 
-.superHeaderMeddon {
+.header1Meddon {
   font-family: "Meddon";
   font-size: 72px;
   font-weight: 400;
@@ -14,7 +14,7 @@
   color: var(--electric-pink);
 }
 
-.header1 {
+.header2 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 48px;
@@ -24,7 +24,7 @@
 .subHeader1 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 24px;
   color: var(--soft-grey);
 }
 

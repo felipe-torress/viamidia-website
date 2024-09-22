@@ -10,7 +10,7 @@ import styles from "./productsSection.module.css";
 const ProductsSection: React.FC = () => {
   return (
     <div className={styles.productsSection}>
-      <p className={classNames(typography.header1, typography.radialGradientText)}>
+      <p className={classNames(typography.header2, typography.radialGradientText)}>
         Conheça nossos serviços
       </p>
       <HomeProductCard

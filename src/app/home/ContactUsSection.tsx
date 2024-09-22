@@ -10,7 +10,7 @@ import PhoneNumber from "../components/texts/PhoneNumber";
 const ContactUsSection: React.FC = () => {
   return (
     <div className={styles.contactUsSection}>
-      <p className={classNames(typography.header1, typography.radialGradientText)}>
+      <p className={classNames(typography.header2, typography.radialGradientText)}>
         Venha nos visitar
       </p>
       <div className={styles.contactUsSectionContent}>
