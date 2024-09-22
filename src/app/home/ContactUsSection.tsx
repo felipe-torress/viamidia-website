@@ -1,23 +1,20 @@
-import React from "react";
-import styles from "./contactUsSection.module.css";
 import typography from "@styles/typography.module.css";
 import classNames from "classnames";
-import WhatsAppButton from "../components/buttons/WhatsappButton";
-import WazeButton from "../components/buttons/WazeButton";
-import InstagramButton from "../components/buttons/InstagramButton";
-import PhoneNumber from "../components/texts/PhoneNumber";
+import React from "react";
+import ContactsCard from "../components/cards/ContactsCard";
+import styles from "./contactUsSection.module.css";
 
 const ContactUsSection: React.FC = () => {
   return (
     <section id="contactSection" className={styles.contactUsSection}>
-      <p
+      <h2
         className={classNames(
           typography.header2,
           typography.radialGradientText
         )}
       >
         Venha nos visitar
-      </p>
+      </h2>
       <div className={styles.contactUsSectionContent}>
         <div className={styles.mapContainer}>
           <iframe
@@ -28,18 +25,7 @@ const ContactUsSection: React.FC = () => {
             loading="lazy"
           ></iframe>
         </div>
-        <div className={styles.contactsContainer}>
-          <p className={typography.bodyLarge}>
-            Agende uma visita e tome um cafézinho com a gente:
-          </p>
-          <PhoneNumber
-            text="(16) 99406-5410"
-            phoneNumberComplete="+5516994065410"
-          />
-          <WhatsAppButton />
-          <InstagramButton />
-          <WazeButton />
-        </div>
+        <ContactsCard />
       </div>
     </section>
   );
