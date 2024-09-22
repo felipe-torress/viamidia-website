@@ -22,7 +22,11 @@
 
   --car-wrapping-blue: #42a8e1;
   --acm-yellow: #ecd81e;
-  --card-background-color: #232323
+  --card-background-color: #232323;
+}
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
 body {

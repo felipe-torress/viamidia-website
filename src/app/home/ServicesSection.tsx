@@ -10,7 +10,7 @@ import styles from "./servicesSection.module.css";
 
 const ProductsSection: React.FC = () => {
   return (
-    <section className={styles.servicesSection}>
+    <section id="servicesSection" className={styles.servicesSection}>
       <h2
         className={classNames(
           typography.header2,
