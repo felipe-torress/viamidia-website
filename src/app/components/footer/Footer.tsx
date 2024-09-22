@@ -1,7 +1,7 @@
-import typography from "@styles/typography.module.css";
 import { Studio1001 } from "@components/svgs";
+import typography from "@styles/typography.module.css";
 import styles from "./footer.module.css";
-import OpeningHoursSection from "./OpeningHoursSection";
+import FooterContactSection from "./FooterContactSection";
 import PagesSection from "./PagesSection";
 import SafeWebsiteSection from "./SafeWebsiteSection";
 import SocialMediaSection from "./SocialMediaSection";
@@ -22,7 +22,7 @@ const TopSection: React.FC = () => {
     <div className={styles.topSection}>
       <SocialMediaSection />
       <PagesSection />
-      <OpeningHoursSection />
+      <FooterContactSection />
       <SafeWebsiteSection />
     </div>
   );
