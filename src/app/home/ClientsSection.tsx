@@ -18,7 +18,7 @@ import styles from "./clientsSection.module.css";
 
 const ClientsSection: React.FC = () => {
   return (
-    <section id="contactSection" className={styles.clientsSection}>
+    <section id="clientsSection" className={styles.clientsSection}>
       <h2
         className={classNames(
           typography.header2,

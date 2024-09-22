@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
 import Logo from "@components/logo/Logo";
+import constants from "@utils/contants";
+import Link from "next/link";
+import React, { useEffect, useRef, useState } from "react";
+import { animated, useSpring } from "react-spring";
 import { useNavbarContext } from "./NavbarContext";
 import styles from "./navbar.module.css";
-import Link from "next/link";
-import constants from "@utils/contants";
-import { useSpring, animated } from "react-spring";
 
 const Navbar: React.FC = () => {
   const navbarRef = useRef<HTMLDivElement>(null);
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
           <Link href="#servicesSection">Serviços</Link>
         </li>
         <li>
-          <Link href="#casesSection">Clientes</Link>
+          <Link href="#clientsSection">Clientes</Link>
         </li>
         <li>
           <Link href="#contactSection">Contato</Link>
