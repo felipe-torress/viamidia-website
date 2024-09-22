@@ -19,10 +19,13 @@
   --orange-gradient: #ffc273;
   --purple-shadow: #b585ff;
   --border-grey: #363636;
+
+  --car-wrapping-blue: #42a8e1;
+  --acm-yellow: #ecd81e;
 }
 
 body {
-  background: linear-gradient(to bottom, black, var(--background-color));
+  background-color: var(--background-color);
 }
 
 @layer utilities {
