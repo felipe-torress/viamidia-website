@@ -21,7 +21,7 @@ const PhoneNumber: React.FC<PhoneNumberProps> = ({
       aria-label={`Ligue para ${text}`}
     >
       <PhoneIcon />
-      <p className={typography.bodyLarge}>{text}</p>
+      <p className={typography.button}>{text}</p>
     </a>
   );
 };

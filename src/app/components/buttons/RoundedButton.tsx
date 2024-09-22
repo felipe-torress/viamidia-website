@@ -45,7 +45,7 @@ const RoundedButton: React.FC<RoundedButtonProps> = ({
       target="_blank"
     >
       <Icon style={iconStyle} />
-      <p className={typography.bodyLarge} style={{...textStyle}}>
+      <p className={typography.button} style={{...textStyle}}>
         {text}
       </p>
     </Link>
