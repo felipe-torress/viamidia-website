@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <main className={styles.home}>
       <GlowingText>
-        <h1 className={classNames(typography.h1, typography.centeredText)}>
+        <h1 className={classNames(typography.header1, typography.centeredText)}>
           Você sonha,
           <br />a gente
           <span
             className={classNames(
-              typography.h1Meddon,
+              typography.header1Meddon,
               typography.linearGradientText
             )}
           >
