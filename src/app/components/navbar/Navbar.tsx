@@ -8,7 +8,6 @@ import Link from "next/link";
 import constants from "@utils/contants";
 import { useSpring, animated } from "react-spring";
 
-// Define the Navbar component
 const Navbar: React.FC = () => {
   const navbarRef = useRef<HTMLDivElement>(null);
   const { navbarHeight, setNavbarHeight } = useNavbarContext();
