@@ -5,6 +5,7 @@ import Logo from "@components/logo/Logo";
 import { useNavbarContext } from "./NavbarContext";
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import constants from "@utils/contants";
 
 // Define the Navbar component
 const Navbar: React.FC = () => {
@@ -29,22 +30,20 @@ const Navbar: React.FC = () => {
       </div>
       <ul className={styles.navbarLinks}>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="#servicesSection">Serviços</Link>
         </li>
         <li>
-          <Link href="/sobre-nos/">Sobre Nós</Link>
+          <Link href="#casesSection">Clientes</Link>
         </li>
         <li>
-          <Link href="/servicos/">Serviços</Link>
+          <Link href="#contactSection">Contato</Link>
         </li>
         <li>
-          <Link href="/cases/">Cases</Link>
-        </li>
-        <li>
-          <Link href="/contato/">Contato</Link>
-        </li>
-        <li>
-          <Link href="/orcamento/" className={styles.navbarLinkButton}>
+          <Link
+            href={constants.whatsappUrl}
+            target="_blank"
+            className={styles.navbarLinkButton}
+          >
             Orçamento
           </Link>
         </li>
