@@ -1,6 +1,7 @@
-import HomeProductCard from "@components/cards/HomeProductCard";
+import ServiceCard from "@components/cards/ServiceCard";
 import acmFacadeImage from "@images/acm-facade.jpg";
 import dimensionalLetterImage from "@images/letra-caixa.jpg";
+import carWrapping from "@images/envelopamento-automotivo.jpg";
 import colors from "@styles/colors.module.css";
 import typography from "@styles/typography.module.css";
 import classNames from "classnames";
@@ -9,25 +10,36 @@ import styles from "./productsSection.module.css";
 
 const ProductsSection: React.FC = () => {
   return (
-    <div className={styles.productsSection}>
-      <p className={classNames(typography.header2, typography.radialGradientText)}>
+    <section className={styles.servicesSection}>
+      <h2
+        className={classNames(
+          typography.header2,
+          typography.radialGradientText
+        )}
+      >
         Conheça nossos serviços
-      </p>
-      <HomeProductCard
-        title="Fachadas em ACM"
-        Text={ACMFacadesDescription}
-        imageSrc={acmFacadeImage.src}
-        contentDescription="Fachada geométrica amarela em ACM"
-        isTextLeftAligned={true}
-      />
-      <HomeProductCard
-        title="Letras Caixa"
-        Text={DimensionalLettersDescription}
-        imageSrc={dimensionalLetterImage.src}
-        contentDescription="Letra caixa iluminada"
-        isTextLeftAligned={false}
-      />
-    </div>
+      </h2>
+      <div className={styles.servicesSectionContent}>
+        <ServiceCard
+          title="Fachadas em ACM"
+          Text={ACMFacadesDescription}
+          imageSrc={acmFacadeImage.src}
+          contentDescription="Fachada geométrica amarela em ACM"
+        />
+        <ServiceCard
+          title="Letras Caixa"
+          Text={DimensionalLettersDescription}
+          imageSrc={dimensionalLetterImage.src}
+          contentDescription="Letra caixa iluminada"
+        />
+        <ServiceCard
+          title="Adesivagem Automotiva"
+          Text={CarWrappingDescription}
+          imageSrc={carWrapping.src}
+          contentDescription="Adesivagem Automotiva detalhada"
+        />
+      </div>
+    </section>
   );
 };
 
@@ -36,11 +48,11 @@ export default ProductsSection;
 const ACMFacadesDescription: React.FC = () => {
   return (
     <p className={typography.bodyLarge}>
-      A <span className={colors.pastelBlue}>fachada</span> do seu
-      estabelecimento é o primeiro contato visual que os clientes têm com sua
-      marca, sendo crucial para causar uma{" "}
-      <span className={colors.pastelBlue}>boa impressão</span> e{" "}
-      <span className={colors.pastelBlue}>atrair novos consumidores</span>. Uma
+      A <span className={colors.acmYellow}>fachada</span> do seu estabelecimento
+      é o primeiro contato visual que os clientes têm com sua marca, sendo
+      crucial para causar uma{" "}
+      <span className={colors.acmYellow}>boa impressão</span> e{" "}
+      <span className={colors.acmYellow}>atrair novos consumidores</span>. Uma
       fachada atraente e bem cuidada não só destaca seu negócio da concorrência,
       mas também comunica a identidade e os valores da sua marca de forma
       eficaz.
@@ -58,6 +70,22 @@ const DimensionalLettersDescription: React.FC = () => {
       <span className={colors.salmon}>iluminação</span>, valorizando a fachada e
       transmitindo profissionalismo e credibilidade. Ideais para qualquer tipo
       de estabelecimento.
+    </p>
+  );
+};
+
+const CarWrappingDescription: React.FC = () => {
+  return (
+    <p className={typography.bodyLarge}>
+      A adesivagem automotiva é ideal para{" "}
+      <span className={colors.carWrappingBlue}>reforçar a identidade</span> da
+      sua empresa e garantir alta visibilidade. Com adesivos duráveis e
+      personalizáveis, você transforma sua frota em uma poderosa ferramenta de
+      marketing. Esses adesivos oferecem uma{" "}
+      <span className={colors.carWrappingBlue}>
+        aparência profissional e marcante
+      </span>
+      , ajudando a destacar sua marca e ampliar sua presença no mercado.
     </p>
   );
 };
