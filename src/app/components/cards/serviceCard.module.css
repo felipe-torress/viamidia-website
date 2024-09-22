@@ -7,7 +7,7 @@
   min-height: 510px;
   border-radius: 20px;
   clip-path: inset(0 0 0 0 round 20px);
-  background-color: var(--via-midia-black);
+  background-color: var(--card-background-color);
 }
 
 .cardTextContainer {
