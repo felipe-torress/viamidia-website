@@ -1,16 +1,47 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "@components/logo/Logo";
 import { useNavbarContext } from "./NavbarContext";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import constants from "@utils/contants";
+import { useSpring, animated } from "react-spring";
 
 // Define the Navbar component
 const Navbar: React.FC = () => {
   const navbarRef = useRef<HTMLDivElement>(null);
   const { navbarHeight, setNavbarHeight } = useNavbarContext();
+  const [isVisible, setIsVisible] = useState(true);
+  let lastScrollY = 0;
+
+  const handleScroll = () => {
+    if (typeof window !== "undefined") {
+      const currentScrollY = window.scrollY;
+
+      // Check if scrolling down
+      if (currentScrollY > lastScrollY) {
+        setIsVisible(false); // Hide navbar
+      } else {
+        setIsVisible(true); // Show navbar
+      }
+
+      lastScrollY = currentScrollY; // Update last scroll position
+    }
+  };
+
+  const animationProps = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateY(0)" : "translateY(-50px)",
+    config: { duration: 300 },
+  });
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     if (navbarRef.current) {
@@ -24,7 +55,11 @@ const Navbar: React.FC = () => {
   }, [navbarRef]);
 
   return (
-    <nav className={styles.navbar} ref={navbarRef}>
+    <animated.nav
+      style={{ ...animationProps }}
+      className={styles.navbar}
+      ref={navbarRef}
+    >
       <div className={styles.navbarLogo}>
         <Logo />
       </div>
@@ -48,7 +83,7 @@ const Navbar: React.FC = () => {
           </Link>
         </li>
       </ul>
-    </nav>
+    </animated.nav>
   );
 };
 
