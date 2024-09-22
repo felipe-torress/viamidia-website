@@ -7,5 +7,13 @@
 }
 
 .salmon {
-  color: var(--salmon)
+  color: var(--salmon);
+}
+
+.carWrappingBlue {
+  color: var(--car-wrapping-blue);
+}
+
+.acmYellow {
+  color: var(--acm-yellow);
 }
