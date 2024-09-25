@@ -1,12 +1,13 @@
 "use client";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
 import { useState } from "react";
 import ChildComponent from "./components/child/ChildComponent";
+import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import { NavbarContext } from "./components/navbar/NavbarContext";
 import "./globals.css";
-import Footer from "./components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
   return (
     <NavbarContext.Provider value={{ navbarHeight, setNavbarHeight }}>
       <BaseLayout>{children}</BaseLayout>
+      <SpeedInsights />
     </NavbarContext.Provider>
   );
 }
