@@ -1,6 +1,6 @@
 import * as typography from "@styles/typography.module.css";
 import * as styles from "./footer.module.css";
-import { GoogleSafeBrowsing } from "@components/svgs";
+import GoogleSafeBrowsing from '@svgs/googleSafeBrowsing.svg';
 
 const SafeWebsiteSection: React.FC = () => {
   return (

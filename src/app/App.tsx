@@ -8,9 +8,11 @@ import Footer from "@components/footer/Footer";
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 };

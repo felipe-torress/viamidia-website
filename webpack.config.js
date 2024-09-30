@@ -18,6 +18,7 @@ module.exports = {
       "@colors": path.resolve(__dirname, "./public/colors"),
       "@utils": path.resolve(__dirname, "./src/app/utils"),
       "@pages": path.resolve(__dirname, "./src/app/pages"),
+      "@svgs": path.resolve(__dirname, "./public/svgs"),
     },
   },
   mode: "production",
@@ -44,16 +45,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpg|jpeg|png|gif|svg)$/, // For image files
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[path][name].[ext]", // Output filename
-              outputPath: "images/", // Output directory for images
-            },
-          },
-        ],
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ["@svgr/webpack"],
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif)$/, // For image files
+        type: "asset/resource",
       },
     ],
   },
@@ -76,6 +74,5 @@ module.exports = {
     compress: true,
     port: 3000, // Development server port
   },
-  mode: "development", // Change to 'production' for production builds
   devtool: "source-map", // Enable source maps
 };

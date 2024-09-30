@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as styles from "./phoneNumber.module.css";
-import PhoneIcon from "@components/svgs/PhoneIcon.svg";
+import PhoneIcon from "@svgs/phoneIcon.svg";
 import * as typography from "@styles/typography.module.css";
 
 interface PhoneNumberProps {

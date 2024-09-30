@@ -22,7 +22,8 @@
       "@images/*": ["./public/images/*"],
       "@colors/*": ["./public/colors/*"],
       "@utils/*": ["./src/app/utils/*"],
-      "@pages/*": ["./src/app/pages/*"]
+      "@pages/*": ["./src/app/pages/*"],
+      "@svgs/*": ["./public/svgs/*"]
     }
   },
   "include": [

@@ -2,7 +2,8 @@ import React from "react";
 import * as styles from "./footer.module.css";
 import ContactField from "./ContactField";
 import { FaWhatsapp } from "react-icons/fa";
-import { IconEmail16px, IconLocation16px } from "@components/svgs";
+import IconEmail16px from "@svgs/16px/iconEmail16px.svg";
+import IconLocation16px from "@svgs/16px/iconLocation16px.svg";
 
 const FooterContactSection: React.FC = () => {
   return (
