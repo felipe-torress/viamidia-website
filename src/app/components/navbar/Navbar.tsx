@@ -1,12 +1,9 @@
-"use client";
-
 import Logo from "@components/logo/Logo";
-import constants from "@utils/contants";
-import Link from "next/link";
+import constants from "@utils/constants";
 import React, { useEffect, useRef, useState } from "react";
 import { animated, useSpring } from "react-spring";
 import { useNavbarContext } from "./NavbarContext";
-import styles from "./navbar.module.css";
+import * as styles from "./navbar.module.css";
 
 const Navbar: React.FC = () => {
   const navbarRef = useRef<HTMLDivElement>(null);
@@ -64,22 +61,22 @@ const Navbar: React.FC = () => {
       </div>
       <ul className={styles.navbarLinks}>
         <li>
-          <Link href="#servicesSection">Serviços</Link>
+          <a href="#servicesSection">Serviços</a>
         </li>
         <li>
-          <Link href="#clientsSection">Clientes</Link>
+          <a href="#clientsSection">Clientes</a>
         </li>
         <li>
-          <Link href="#contactSection">Contato</Link>
+          <a href="#contactSection">Contato</a>
         </li>
         <li>
-          <Link
+          <a
             href={constants.whatsappUrl}
             target="_blank"
             className={styles.navbarLinkButton}
           >
             Orçamento
-          </Link>
+          </a>
         </li>
       </ul>
     </animated.nav>

@@ -3,7 +3,7 @@ import { useTransition, animated } from "react-spring";
 import bombomImage from "@images/homeImagePager/Bombom.jpg";
 import dcorImage from "@images/homeImagePager/Dcor.jpg";
 import gibaImage from "@images/homeImagePager/Giba.jpg";
-import styles from "./imagePager.module.css";
+import * as styles from "./imagePager.module.css";
 import classNames from "classnames";
 
 const images = [dcorImage, bombomImage, gibaImage];

@@ -1,11 +1,11 @@
-import typography from "@styles/typography.module.css";
-import colors from "@styles/colors.module.css";
+import * as typography from "@styles/typography.module.css";
+import * as colors from "@styles/colors.module.css";
 import React from "react";
 import InstagramButton from "../buttons/InstagramButton";
 import WazeButton from "../buttons/WazeButton";
 import WhatsAppButton from "../buttons/WhatsappButton";
 import PhoneNumber from "../texts/PhoneNumber";
-import styles from "./contactsCard.module.css";
+import * as styles from "./contactsCard.module.css";
 import classNames from "classnames";
 
 const ContactsCard: React.FC = () => {

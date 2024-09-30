@@ -1,7 +1,5 @@
-"use client";
-
 import React from "react";
-import { useNavbarContext } from "../navbar/NavbarContext";
+import { useNavbarContext } from "@components/navbar/NavbarContext";
 
 interface ChildComponentProps {
   children: React.ReactNode;

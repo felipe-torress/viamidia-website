@@ -2,11 +2,11 @@ import ServiceCard from "@components/cards/ServiceCard";
 import acmFacadeImage from "@images/acm-facade.jpg";
 import dimensionalLetterImage from "@images/letra-caixa.jpg";
 import carWrapping from "@images/envelopamento-automotivo.jpg";
-import colors from "@styles/colors.module.css";
-import typography from "@styles/typography.module.css";
+import * as colors from "@styles/colors.module.css";
+import * as typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import React from "react";
-import styles from "./servicesSection.module.css";
+import * as styles from "./servicesSection.module.css";
 
 const ProductsSection: React.FC = () => {
   return (

@@ -11,10 +11,10 @@ import {
     LogoOdontoCompany,
     LogoResolv,
 } from "@components/svgs";
-import typography from "@styles/typography.module.css";
+import * as typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import React from "react";
-import styles from "./clientsSection.module.css";
+import * as styles from "./clientsSection.module.css";
 
 const ClientsSection: React.FC = () => {
   return (

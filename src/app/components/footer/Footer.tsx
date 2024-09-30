@@ -1,6 +1,6 @@
 import { Studio1001 } from "@components/svgs";
-import typography from "@styles/typography.module.css";
-import styles from "./footer.module.css";
+import * as typography from "@styles/typography.module.css";
+import * as styles from "./footer.module.css";
 import FooterContactSection from "./FooterContactSection";
 import PagesSection from "./PagesSection";
 import SafeWebsiteSection from "./SafeWebsiteSection";

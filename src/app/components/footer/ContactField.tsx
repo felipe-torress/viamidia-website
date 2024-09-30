@@ -1,6 +1,6 @@
-import typography from "@styles/typography.module.css";
+import * as typography from "@styles/typography.module.css";
 import { SVGProps } from "react";
-import styles from "./contactField.module.css";
+import * as styles from "./contactField.module.css";
 import classNames from "classnames";
 
 interface ContactFieldProps {

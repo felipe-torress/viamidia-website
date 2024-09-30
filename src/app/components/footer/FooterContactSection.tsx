@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./footer.module.css";
+import * as styles from "./footer.module.css";
 import ContactField from "./ContactField";
 import { FaWhatsapp } from "react-icons/fa";
 import { IconEmail16px, IconLocation16px } from "@components/svgs";

@@ -1,22 +1,20 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    "target": "ES6",
+    "moduleResolution": "node",
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "noEmit": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "baseUrl": "./", // Add this line
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/app/components/*"],
@@ -24,14 +22,15 @@
       "@images/*": ["./public/images/*"],
       "@colors/*": ["./public/colors/*"],
       "@utils/*": ["./src/app/utils/*"],
+      "@pages/*": ["./src/app/pages/*"]
     }
   },
   "include": [
-    "svgr.d.ts", // should be the first
-    "next-env.d.ts",
+    "typings.d.ts", // should be the first
+    "src/**/*",
     "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
+    "**/*.tsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "typeRoots": ["./node_modules/@types", "./"]
 }
