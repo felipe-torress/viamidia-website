@@ -4,6 +4,7 @@ import Home from "@pages/home/Home";
 import { NavbarContext } from "@components/navbar/NavbarContext";
 import Navbar from "@components/navbar/Navbar";
 import Footer from "@components/footer/Footer";
+import ChildComponent from "./components/child/ChildComponent";
 
 const App = () => {
   return (
@@ -28,9 +29,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <NavbarContext.Provider value={{ navbarHeight, setNavbarHeight }}>
-      <div>
+      <div className="screenContent">
         <Navbar />
-        <main>{children}</main>
+        <ChildComponent>{children}</ChildComponent>
         <Footer />
       </div>
     </NavbarContext.Provider>

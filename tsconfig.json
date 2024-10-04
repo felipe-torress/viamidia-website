@@ -13,8 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
-    "baseUrl": "./", // Add this line
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/app/components/*"],
@@ -27,7 +26,6 @@
     }
   },
   "include": [
-    "typings.d.ts", // should be the first
     "src/**/*",
     "**/*.ts",
     "**/*.tsx"

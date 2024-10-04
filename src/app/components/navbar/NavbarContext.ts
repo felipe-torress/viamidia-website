@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, ReactNode, FC } from 'react';
+import { createContext, useContext } from 'react';
 
 // Define the shape of the context state
 interface NavbarContextType {
@@ -17,4 +17,3 @@ export function useNavbarContext() {
   }
   return context;
 }
-

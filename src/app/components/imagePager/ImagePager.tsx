@@ -34,7 +34,7 @@ const ImagePager: React.FC = () => {
       {transitions((style, index) => (
         <animated.img
           key={index} // Ensure each animated item has a unique key
-          src={images[index].src}
+          src={images[index]}
           alt={`Slider Image ${index}`}
           style={{ ...style }}
           className={classNames(styles.imagePagerImage)}

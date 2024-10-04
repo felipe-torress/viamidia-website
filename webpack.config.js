@@ -30,19 +30,25 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/i,
+        test: /\.module\.css$/,
         use: [
-          { loader: MiniCssExtractPlugin.loader, options: {} },
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
-              url: false,
               modules: {
-                localIdentName: "[name]__[local]___[hash:base64:5]", // Customize class name format
+                localIdentName: "[name]__[local]___[hash:base64:5]",
               },
+              importLoaders: 1,
             },
           },
+          "postcss-loader", // This will ensure modern CSS is transformed, including calc()
         ],
+      },
+      {
+        test: /\.css$/,
+        exclude: /\.module\.css$/, // Regular CSS
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.svg$/i,
@@ -50,8 +56,16 @@ module.exports = {
         use: ["@svgr/webpack"],
       },
       {
-        test: /\.(jpg|jpeg|png|gif)$/, // For image files
-        type: "asset/resource",
+        test: /\.(jpg|jpeg|png|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[path][name].[ext]", // Keep original filename and path
+              outputPath: "images/", // Output directory for images
+            },
+          },
+        ],
       },
     ],
   },
