@@ -8,8 +8,10 @@
   gap: 4px;
   padding: 4px 16px;
   border-radius: 60px;
+  border-style: solid; /* or dashed, dotted, etc. */
   border-color: var(--soft-grey);
   border-width: 1px;
+  text-decoration: none; /* Remove underline */
 }
 
 .roundedButton p {

@@ -6,10 +6,12 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border-style: solid; /* or dashed, dotted, etc. */
   border-color: var(--via-midia-black);
   border-width: 1px;
   background-color: var(--soft-grey);
   transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline */
 }
 
 .socialMediaButton:hover {

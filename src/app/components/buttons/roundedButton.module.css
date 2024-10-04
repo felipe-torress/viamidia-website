@@ -8,6 +8,7 @@
   gap: 4px;
   padding: 4px 16px;
   border-radius: 60px;
+  text-decoration: none; /* Remove underline */
 }
 
 .roundedButton svg {
