@@ -4,7 +4,7 @@ import Home from "@pages/home/Home";
 import { NavbarContext } from "@components/navbar/NavbarContext";
 import Navbar from "@components/navbar/Navbar";
 import Footer from "@components/footer/Footer";
-import ChildComponent from "./components/child/ChildComponent";
+import ChildComponent from "@components/child/ChildComponent";
 
 const App = () => {
   return (

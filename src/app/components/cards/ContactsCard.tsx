@@ -1,10 +1,10 @@
 import * as typography from "@styles/typography.module.css";
 import * as colors from "@styles/colors.module.css";
 import React from "react";
-import InstagramButton from "../buttons/InstagramButton";
-import WazeButton from "../buttons/WazeButton";
-import WhatsAppButton from "../buttons/WhatsappButton";
-import PhoneNumber from "../texts/PhoneNumber";
+import InstagramButton from "@components/buttons/InstagramButton";
+import WazeButton from "@components/buttons/WazeButton";
+import WhatsAppButton from "@components/buttons/WhatsappButton";
+import PhoneNumber from "@components/texts/PhoneNumber";
 import * as styles from "./contactsCard.module.css";
 import classNames from "classnames";
 

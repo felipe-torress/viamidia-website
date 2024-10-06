@@ -1,7 +1,7 @@
 import SocialMediaButton from "@components/buttons/SocialMediaButton";
 import * as typography from "@styles/typography.module.css";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import Logo from "../logo/Logo";
+import Logo from "@components/logo/Logo";
 import * as styles from "./footer.module.css";
 import constants from "@utils/constants";
 
