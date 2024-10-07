@@ -5,23 +5,14 @@ const PagesSection: React.FC = () => {
   return (
     <div className={styles.pagesSection}>
       <p className={typography.subHeader2}>Páginas</p>
-      <a className={typography.bodySmall} href="/">
-        Home
-      </a>
-      <a className={typography.bodySmall} href="/sobre-nos/">
-        Sobre Nós
-      </a>
-      <a className={typography.bodySmall} href="/servicos/">
+      <a className={typography.bodySmall} href="#servicesSection">
         Serviços
       </a>
-      <a className={typography.bodySmall} href="/cases/">
-        Cases
-      </a>
-      <a className={typography.bodySmall} href="/contato/">
+      <a className={typography.bodySmall} href="#contactSection">
         Contato
       </a>
-      <a className={typography.bodySmall} href="/orcamento/">
-        Orçamento
+      <a className={typography.bodySmall} href="#clientsSection">
+        Clientes
       </a>
     </div>
   );
