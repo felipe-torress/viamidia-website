@@ -1,9 +1,7 @@
 import React from "react";
-import styles from "./roundedButton.module.css";
-import typography from "@styles/typography.module.css";
-import Link from "next/link";
+import * as styles from "./roundedButton.module.css";
+import * as typography from "@styles/typography.module.css";
 import colors from "@colors/colors";
-import constants from "@utils/contants";
 
 interface RoundedButtonProps {
   text: string;
@@ -38,17 +36,17 @@ const RoundedButton: React.FC<RoundedButtonProps> = ({
   };
 
   return (
-    <Link
+    <a
       className={styles.roundedButton}
       href={href}
       style={containerStyle}
       target="_blank"
     >
       <Icon style={iconStyle} />
-      <p className={typography.button} style={{...textStyle}}>
+      <p className={typography.button} style={{ ...textStyle }}>
         {text}
       </p>
-    </Link>
+    </a>
   );
 };
 

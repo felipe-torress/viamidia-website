@@ -1,13 +1,11 @@
-"use client";
-
-import ContactUsSection from "@/app/home/ContactSection";
+import ContactUsSection from "@/app/pages/home/sections/ContactSection";
+import ImagePager from "@components/imagePager/ImagePager";
 import GlowingText from "@components/texts/GlowingText";
-import styles from "@styles/home.module.css";
-import typography from "@styles/typography.module.css";
+import * as typography from "@styles/typography.module.css";
 import classNames from "classnames";
-import ImagePager from "./components/imagePager/ImagePager";
-import ClientsSection from "./home/ClientsSection";
-import ServicesSection from "./home/ServicesSection";
+import * as styles from "./home.module.css";
+import ClientsSection from "./sections/ClientsSection";
+import ServicesSection from "./sections/ServicesSection";
 
 export default function Home() {
   return (
@@ -27,13 +25,9 @@ export default function Home() {
           </span>
         </h1>
       </GlowingText>
-
       <ImagePager />
-
       <ServicesSection />
-
       <ClientsSection />
-
       <ContactUsSection />
     </main>
   );

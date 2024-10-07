@@ -1,5 +1,4 @@
-import Link from "next/link";
-import styles from "./socialMediaButton.module.css";
+import * as styles from "./socialMediaButton.module.css";
 
 interface SocialMediaButtonProps {
   href: string;
@@ -11,9 +10,9 @@ const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({
   children,
 }) => {
   return (
-    <Link className={styles.socialMediaButton} href={href} target="_blank">
+    <a className={styles.socialMediaButton} href={href} target="_blank">
       {children}
-    </Link>
+    </a>
   );
 };
 

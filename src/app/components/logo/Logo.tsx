@@ -1,12 +1,12 @@
-import Link from "next/link";
-import styles from "./logo.module.css";
+import * as styles from "./logo.module.css";
+import LogoViamidia from "@svgs/logoViamidia.svg";
 
 const Logo = () => {
   return (
     <div className={styles.logo}>
-      <Link href="/">
-        <img src={"/images/Logo-ViaMidia.png"} alt="Logo"/>
-      </Link>
+      <a href="/">
+        <LogoViamidia />
+      </a>
     </div>
   );
 };

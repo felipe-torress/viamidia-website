@@ -3,7 +3,7 @@ import { useTransition, animated } from "react-spring";
 import bombomImage from "@images/homeImagePager/Bombom.jpg";
 import dcorImage from "@images/homeImagePager/Dcor.jpg";
 import gibaImage from "@images/homeImagePager/Giba.jpg";
-import styles from "./imagePager.module.css";
+import * as styles from "./imagePager.module.css";
 import classNames from "classnames";
 
 const images = [dcorImage, bombomImage, gibaImage];
@@ -34,7 +34,7 @@ const ImagePager: React.FC = () => {
       {transitions((style, index) => (
         <animated.img
           key={index} // Ensure each animated item has a unique key
-          src={images[index].src}
+          src={images[index]}
           alt={`Slider Image ${index}`}
           style={{ ...style }}
           className={classNames(styles.imagePagerImage)}

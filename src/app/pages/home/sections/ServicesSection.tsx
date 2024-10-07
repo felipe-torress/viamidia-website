@@ -2,11 +2,11 @@ import ServiceCard from "@components/cards/ServiceCard";
 import acmFacadeImage from "@images/acm-facade.jpg";
 import dimensionalLetterImage from "@images/letra-caixa.jpg";
 import carWrapping from "@images/envelopamento-automotivo.jpg";
-import colors from "@styles/colors.module.css";
-import typography from "@styles/typography.module.css";
+import * as colors from "@styles/colors.module.css";
+import * as typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import React from "react";
-import styles from "./servicesSection.module.css";
+import * as styles from "./servicesSection.module.css";
 
 const ProductsSection: React.FC = () => {
   return (
@@ -23,19 +23,19 @@ const ProductsSection: React.FC = () => {
         <ServiceCard
           title="Fachadas em ACM"
           Text={ACMFacadesDescription}
-          imageSrc={acmFacadeImage.src}
+          imageSrc={acmFacadeImage}
           contentDescription="Fachada geométrica amarela em ACM"
         />
         <ServiceCard
           title="Letras Caixa"
           Text={DimensionalLettersDescription}
-          imageSrc={dimensionalLetterImage.src}
+          imageSrc={dimensionalLetterImage}
           contentDescription="Letra caixa iluminada"
         />
         <ServiceCard
           title="Adesivagem Automotiva"
           Text={CarWrappingDescription}
-          imageSrc={carWrapping.src}
+          imageSrc={carWrapping}
           contentDescription="Adesivagem Automotiva detalhada"
         />
       </div>

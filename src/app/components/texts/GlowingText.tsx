@@ -1,4 +1,4 @@
-import styles from "./glowingText.module.css";
+import * as styles from "./glowingText.module.css";
 
 interface GlowingTextProps {
   children: React.ReactNode;

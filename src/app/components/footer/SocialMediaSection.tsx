@@ -1,9 +1,9 @@
 import SocialMediaButton from "@components/buttons/SocialMediaButton";
-import typography from "@styles/typography.module.css";
+import * as typography from "@styles/typography.module.css";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import Logo from "../logo/Logo";
-import styles from "./footer.module.css";
-import constants from "@utils/contants";
+import Logo from "@components/logo/Logo";
+import * as styles from "./footer.module.css";
+import constants from "@utils/constants";
 
 const SocialMediaSection: React.FC = () => {
   return (

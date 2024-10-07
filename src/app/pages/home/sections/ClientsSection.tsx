@@ -1,20 +1,18 @@
-import {
-    LogoA2,
-    LogoBelgo,
-    LogoCacauShow,
-    LogoCopacabana,
-    LogoGiba,
-    LogoInService,
-    LogoNatsumi,
-    LogoNestle,
-    LogoNovaExpress,
-    LogoOdontoCompany,
-    LogoResolv,
-} from "@components/svgs";
-import typography from "@styles/typography.module.css";
+import LogoA2 from '@svgs/logos/logoA2.svg';
+import LogoBelgo from '@svgs/logos/logoBelgo.svg';
+import LogoCacauShow from '@svgs/logos/logoCacauShow.svg';
+import LogoCopacabana from '@svgs/logos/logoCopacabana.svg';
+import LogoGiba from '@svgs/logos/logoGiba.svg';
+import LogoInService from '@svgs/logos/logoInService.svg';
+import LogoNatsumi from '@svgs/logos/logoNatsumi.svg';
+import LogoNestle from '@svgs/logos/logoNestle.svg';
+import LogoNovaExpress from '@svgs/logos/logoNovaExpress.svg';
+import LogoOdontoCompany from '@svgs/logos/logoOdontoCompany.svg';
+import LogoResolv from '@svgs/logos/logoResolv.svg';
+import * as typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import React from "react";
-import styles from "./clientsSection.module.css";
+import * as styles from "./clientsSection.module.css";
 
 const ClientsSection: React.FC = () => {
   return (

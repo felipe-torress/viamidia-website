@@ -1,9 +1,7 @@
-"use client";
-
 import React, { useState } from "react";
-import styles from "./phoneNumber.module.css";
-import PhoneIcon from "@components/svgs/PhoneIcon.svg";
-import typography from "@styles/typography.module.css";
+import * as styles from "./phoneNumber.module.css";
+import PhoneIcon from "@svgs/phoneIcon.svg";
+import * as typography from "@styles/typography.module.css";
 
 interface PhoneNumberProps {
   text: string;

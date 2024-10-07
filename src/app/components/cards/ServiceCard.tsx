@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "./serviceCard.module.css";
-import Image from "next/image";
-import typography from "@styles/typography.module.css";
+import * as styles from "./serviceCard.module.css";
+import * as typography from "@styles/typography.module.css";
 import classNames from "classnames";
 
 interface ServiceCardProps {
@@ -21,12 +20,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <article
       className={classNames(styles.cardContainer)}
     >
-      <Image
+      <img
         src={imageSrc}
         alt={contentDescription}
         height={200}
         width={400}
-        priority
       />
       <div className={classNames(styles.cardTextContainer)}>
         <h2 className={typography.subHeader1}>{title}</h2>
