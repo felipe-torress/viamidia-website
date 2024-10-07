@@ -27,7 +27,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         width={400}
       />
       <div className={classNames(styles.cardTextContainer)}>
-        <h2 className={typography.subHeader1}>{title}</h2>
+        <h3 className={typography.subHeader1}>{title}</h3>
         <Text />
       </div>
     </article>

@@ -7,6 +7,11 @@ import * as styles from "./imagePager.module.css";
 import classNames from "classnames";
 
 const images = [dcorImage, bombomImage, gibaImage];
+const contentDescriptions = [
+  "Fachada em Letra Caixa - DCor - Ribeirão Preto",
+  "Fachada em Letra Caixa - Bombom - Ribeirão Preto",
+  "Fachada em ACM - IBuy Giba - Ribeirão Preto",
+]
 
 const ImagePager: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -35,7 +40,7 @@ const ImagePager: React.FC = () => {
         <animated.img
           key={index} // Ensure each animated item has a unique key
           src={images[index]}
-          alt={`Slider Image ${index}`}
+          alt={contentDescriptions[index]}
           style={{ ...style }}
           className={classNames(styles.imagePagerImage)}
         />

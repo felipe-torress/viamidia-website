@@ -24,19 +24,19 @@ const ProductsSection: React.FC = () => {
           title="Fachadas em ACM"
           Text={ACMFacadesDescription}
           imageSrc={acmFacadeImage}
-          contentDescription="Fachada geométrica amarela em ACM"
+          contentDescription="Fachada em ACM 3D"
         />
         <ServiceCard
           title="Letras Caixa"
           Text={DimensionalLettersDescription}
           imageSrc={dimensionalLetterImage}
-          contentDescription="Letra caixa iluminada"
+          contentDescription="Letra Caixa Iluminada"
         />
         <ServiceCard
-          title="Adesivagem Automotiva"
+          title="Adesivagem de Frotas"
           Text={CarWrappingDescription}
           imageSrc={carWrapping}
-          contentDescription="Adesivagem Automotiva detalhada"
+          contentDescription="Adesivagem de Frota"
         />
       </div>
     </section>
