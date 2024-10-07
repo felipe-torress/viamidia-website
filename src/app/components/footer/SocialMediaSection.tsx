@@ -11,14 +11,14 @@ const SocialMediaSection: React.FC = () => {
       <Logo />
       <p className={typography.bodySmall}>Visite Nossas Redes</p>
       <div className={styles.socialMediaButtons}>
-        <SocialMediaButton href={constants.facebookUrl}>
-          <FaFacebook />
+        <SocialMediaButton href={constants.whatsappUrl}>
+          <FaWhatsapp />
         </SocialMediaButton>
         <SocialMediaButton href={constants.instagramUrl}>
           <FaInstagram />
         </SocialMediaButton>
-        <SocialMediaButton href={constants.whatsappUrl}>
-          <FaWhatsapp />
+        <SocialMediaButton href={constants.facebookUrl}>
+          <FaFacebook />
         </SocialMediaButton>
       </div>
       <p className={typography.caption}>
