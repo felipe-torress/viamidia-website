@@ -1,5 +1,5 @@
 .contactsCardContainer {
-  max-width: 300px;
+  width: 100%;
   border-radius: 20px;
   background-color: var(--card-background-color);
   padding: 20px;
@@ -10,10 +10,36 @@
   gap: 18px;
 }
 
+.contactsCardContainer p {
+  text-align: center;
+}
+
 .contactsCardButtons {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .contactsCardContainer {
+    max-width: 300px;
+    border-radius: 20px;
+    background-color: var(--card-background-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 18px;
+  }
+  
+  .contactsCardButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+  }  
 }
