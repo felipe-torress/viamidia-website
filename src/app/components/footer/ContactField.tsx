@@ -1,7 +1,7 @@
 import * as typography from "@styles/typography.module.css";
+import classNames from "classnames";
 import { SVGProps } from "react";
 import * as styles from "./contactField.module.css";
-import classNames from "classnames";
 
 interface ContactFieldProps {
   Icon: React.FC<SVGProps<SVGElement>>;

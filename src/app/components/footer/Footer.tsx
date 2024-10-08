@@ -1,5 +1,5 @@
-import Studio1001 from "@svgs/studio1001.svg";
 import * as typography from "@styles/typography.module.css";
+import Studio1001 from "@svgs/studio1001.svg";
 import * as styles from "./footer.module.css";
 import FooterContactSection from "./FooterContactSection";
 import PagesSection from "./PagesSection";

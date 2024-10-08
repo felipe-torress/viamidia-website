@@ -7,7 +7,7 @@
   padding: 8px 20px;
   display: flex;
   justify-content: space-between;
-  z-index: 1000; /* Set the z-index */
+  z-index: 1000;
   align-items: center;
   border-radius: 20px;
   background-color: rgba(18, 18, 18, 0.3);

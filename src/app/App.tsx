@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "@pages/home/Home";
-import { NavbarContext } from "@components/navbar/NavbarContext";
-import Navbar from "@components/navbar/Navbar";
-import Footer from "@components/footer/Footer";
 import ChildComponent from "@components/child/ChildComponent";
+import Footer from "@components/footer/Footer";
+import Navbar from "@components/navbar/Navbar";
+import { NavbarContext } from "@components/navbar/NavbarContext";
+import Home from "@pages/home/Home";
+import React, { useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 const App = () => {
   return (

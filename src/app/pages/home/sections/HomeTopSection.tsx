@@ -1,9 +1,9 @@
+import ImagePager from "@/app/components/imagePager/ImagePager";
+import GlowingText from "@/app/components/texts/GlowingText";
+import * as typography from "@styles/typography.module.css";
+import classNames from "classnames";
 import React from "react";
 import * as styles from "./homeTopSection.module.css";
-import GlowingText from "@/app/components/texts/GlowingText";
-import ImagePager from "@/app/components/imagePager/ImagePager";
-import classNames from "classnames";
-import * as typography from "@styles/typography.module.css";
 
 const HomeTopSection: React.FC = () => {
   return (

@@ -28,6 +28,6 @@
 .cardContainer img {
   height: 200px;
   width: 100%;
-  object-fit: cover;  /* Makes the image behave like Figma's "Fill" */
-  object-position: center; /* Ensures the image is centered */
+  object-fit: cover;
+  object-position: center;
 }

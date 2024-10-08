@@ -19,7 +19,9 @@
 
 .container a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--via-midia-black); /* Change the underline color */
+  text-decoration-color: var(
+    --via-midia-black
+  ); /* Change the underline color */
 }
 
 .topSection {

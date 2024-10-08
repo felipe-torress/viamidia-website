@@ -1,7 +1,7 @@
-import React from "react";
-import * as styles from "./serviceCard.module.css";
 import * as typography from "@styles/typography.module.css";
 import classNames from "classnames";
+import React from "react";
+import * as styles from "./serviceCard.module.css";
 
 interface ServiceCardProps {
   Text: React.FC;
@@ -17,15 +17,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   contentDescription,
 }) => {
   return (
-    <article
-      className={classNames(styles.cardContainer)}
-    >
-      <img
-        src={imageSrc}
-        alt={contentDescription}
-        height={200}
-        width={400}
-      />
+    <article className={classNames(styles.cardContainer)}>
+      <img src={imageSrc} alt={contentDescription} height={200} width={400} />
       <div className={classNames(styles.cardTextContainer)}>
         <h3 className={typography.subHeader1}>{title}</h3>
         <Text />

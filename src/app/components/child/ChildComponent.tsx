@@ -1,5 +1,5 @@
-import React from "react";
 import { useNavbarContext } from "@components/navbar/NavbarContext";
+import React from "react";
 
 interface ChildComponentProps {
   children: React.ReactNode;

@@ -1,7 +1,7 @@
+import colors from "@colors/colors";
+import * as typography from "@styles/typography.module.css";
 import React from "react";
 import * as styles from "./roundedButton.module.css";
-import * as typography from "@styles/typography.module.css";
-import colors from "@colors/colors";
 
 interface RoundedButtonProps {
   text: string;

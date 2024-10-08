@@ -1,5 +1,5 @@
 import colors from "@colors/colors";
-import constants from '@utils/constants';
+import constants from "@utils/constants";
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import RoundedButton from "./RoundedButton";

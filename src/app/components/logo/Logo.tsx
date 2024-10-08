@@ -1,5 +1,5 @@
-import * as styles from "./logo.module.css";
 import LogoViamidia from "@svgs/logoViamidia.svg";
+import * as styles from "./logo.module.css";
 
 const Logo = () => {
   return (

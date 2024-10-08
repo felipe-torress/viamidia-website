@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { useTransition, animated } from "react-spring";
 import bombomImage from "@images/homeImagePager/Bombom.jpg";
 import dcorImage from "@images/homeImagePager/Dcor.jpg";
 import gibaImage from "@images/homeImagePager/Giba.jpg";
-import * as styles from "./imagePager.module.css";
 import classNames from "classnames";
+import React, { useEffect, useState } from "react";
+import { animated, useTransition } from "react-spring";
+import * as styles from "./imagePager.module.css";
 
 const images = [dcorImage, bombomImage, gibaImage];
 const contentDescriptions = [
   "Fachada em Letra Caixa - DCor - Ribeirão Preto",
   "Fachada em Letra Caixa - Bombom - Ribeirão Preto",
   "Fachada em ACM - IBuy Giba - Ribeirão Preto",
-]
+];
 
 const ImagePager: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
