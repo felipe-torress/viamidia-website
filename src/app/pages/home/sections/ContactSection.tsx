@@ -5,7 +5,7 @@ import * as styles from "./contactSection.module.css";
 
 const ContactUsSection: React.FC = () => {
   return (
-    <BaseHomeSection id="contactSection" title="Venha nos visitar">
+    <BaseHomeSection id="contactSection" title="Solicite seu orçamento">
       <div className={styles.contactUsSectionContent}>
         <div className={styles.mapContainer}>
           <iframe
