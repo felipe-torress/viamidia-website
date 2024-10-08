@@ -1,47 +1,37 @@
 import ServiceCard from "@components/cards/ServiceCard";
 import acmFacadeImage from "@images/acm-facade.jpg";
-import dimensionalLetterImage from "@images/letra-caixa.jpg";
 import carWrapping from "@images/envelopamento-automotivo.jpg";
+import dimensionalLetterImage from "@images/letra-caixa.jpg";
 import * as colors from "@styles/colors.module.css";
 import * as typography from "@styles/typography.module.css";
-import classNames from "classnames";
 import React from "react";
+import BaseHomeSection from "./BaseHomeSection";
 import * as styles from "./servicesSection.module.css";
 
-const ProductsSection: React.FC = () => {
-  return (
-    <section id="servicesSection" className={styles.servicesSection}>
-      <h2
-        className={classNames(
-          typography.header2,
-          typography.radialGradientText
-        )}
-      >
-        Conheça nossos serviços
-      </h2>
-      <div className={styles.servicesSectionContent}>
-        <ServiceCard
-          title="Fachadas em ACM"
-          Text={ACMFacadesDescription}
-          imageSrc={acmFacadeImage}
-          contentDescription="Fachada em ACM 3D"
-        />
-        <ServiceCard
-          title="Letras Caixa"
-          Text={DimensionalLettersDescription}
-          imageSrc={dimensionalLetterImage}
-          contentDescription="Letra Caixa Iluminada"
-        />
-        <ServiceCard
-          title="Adesivagem de Frotas"
-          Text={CarWrappingDescription}
-          imageSrc={carWrapping}
-          contentDescription="Adesivagem de Frota"
-        />
-      </div>
-    </section>
-  );
-};
+const ProductsSection: React.FC = () => (
+  <BaseHomeSection id="servicesSection" title="Conheça nossos serviços">
+    <div className={styles.servicesSectionContent}>
+      <ServiceCard
+        title="Fachadas em ACM"
+        Text={ACMFacadesDescription}
+        imageSrc={acmFacadeImage}
+        contentDescription="Fachada em ACM 3D"
+      />
+      <ServiceCard
+        title="Letras Caixa"
+        Text={DimensionalLettersDescription}
+        imageSrc={dimensionalLetterImage}
+        contentDescription="Letra Caixa Iluminada"
+      />
+      <ServiceCard
+        title="Adesivagem de Frotas"
+        Text={CarWrappingDescription}
+        imageSrc={carWrapping}
+        contentDescription="Adesivagem de Frota"
+      />
+    </div>
+  </BaseHomeSection>
+);
 
 export default ProductsSection;
 

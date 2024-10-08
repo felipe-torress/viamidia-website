@@ -1,20 +1,11 @@
-import * as typography from "@styles/typography.module.css";
-import classNames from "classnames";
-import React from "react";
 import ContactsCard from "@components/cards/ContactsCard";
+import React from "react";
+import BaseHomeSection from "./BaseHomeSection";
 import * as styles from "./contactSection.module.css";
 
 const ContactUsSection: React.FC = () => {
   return (
-    <section id="contactSection" className={styles.contactUsSection}>
-      <h2
-        className={classNames(
-          typography.header2,
-          typography.radialGradientText
-        )}
-      >
-        Venha nos visitar
-      </h2>
+    <BaseHomeSection id="contactSection" title="Venha nos visitar">
       <div className={styles.contactUsSectionContent}>
         <div className={styles.mapContainer}>
           <iframe
@@ -27,7 +18,7 @@ const ContactUsSection: React.FC = () => {
         </div>
         <ContactsCard />
       </div>
-    </section>
+    </BaseHomeSection>
   );
 };
 
