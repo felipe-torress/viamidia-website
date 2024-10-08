@@ -6,7 +6,7 @@ interface ChildComponentProps {
 }
 
 const ChildComponent: React.FC<ChildComponentProps> = ({ children }) => {
-  const { navbarHeight, setNavbarHeight } = useNavbarContext();
+  const { navbarHeight } = useNavbarContext();
 
   return <div style={{ paddingTop: navbarHeight }}>{children}</div>;
 };

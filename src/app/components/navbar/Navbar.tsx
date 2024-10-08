@@ -7,7 +7,7 @@ import * as styles from "./navbar.module.css";
 
 const Navbar: React.FC = () => {
   const navbarRef = useRef<HTMLDivElement>(null);
-  const { navbarHeight, setNavbarHeight } = useNavbarContext();
+  const { setNavbarHeight } = useNavbarContext();
   const [isVisible, setIsVisible] = useState(true);
   let lastScrollY = 0;
 
