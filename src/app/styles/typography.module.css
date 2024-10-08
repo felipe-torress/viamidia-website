@@ -1,38 +1,5 @@
 /* MOBILE STYLES */
 
-/* Weight Modifiers */
-.bold {
-  font-weight: 700;
-}
-
-.regular {
-  font-weight: 400;
-}
-
-/* Alignment Modifiers */
-.centeredText {
-  text-align: center;
-}
-
-/* Color Modifiers */
-.linearGradientText {
-  background: linear-gradient(to right, #ff4ad6, #ffc273);
-  clip: text;
-  background-clip: text;
-  -background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.radialGradientText {
-  background: radial-gradient(circle, #ffc273, #ff4ad6);
-  clip: text;
-  background-clip: text;
-  -background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 /* Text Styles */
 .header1 {
   font-family: "Manrope", sans-serif;
@@ -97,6 +64,39 @@
   font-weight: 400;
   font-size: 14px;
   color: var(--soft-grey);
+}
+
+/* Weight Modifiers */
+.bold {
+  font-weight: 700;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+/* Alignment Modifiers */
+.centeredText {
+  text-align: center;
+}
+
+/* Color Modifiers */
+.linearGradientText {
+  background: linear-gradient(to right, #ff4ad6, #ffc273);
+  clip: text;
+  background-clip: text;
+  -background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.radialGradientText {
+  background: radial-gradient(circle, #ffc273, #ff4ad6);
+  clip: text;
+  background-clip: text;
+  -background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 /* DESKTOP STYLES */
