@@ -1,5 +1,5 @@
 import * as typography from "@styles/typography.module.css";
-import * as styles from "./footer.module.css";
+import * as styles from "./pagesSection.module.css";
 
 const PagesSection: React.FC = () => {
   return (

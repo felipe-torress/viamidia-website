@@ -1,0 +1,17 @@
+.pagesSection {
+  display: grid;
+  justify-items: start;
+  align-items: top;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pagesSection a {
+  text-decoration: none;
+  color: var(--via-midia-black);
+}
+
+.pagesSection a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--via-midia-black);
+}

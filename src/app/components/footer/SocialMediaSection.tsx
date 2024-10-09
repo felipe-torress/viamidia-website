@@ -3,7 +3,7 @@ import Logo from "@components/logo/Logo";
 import * as typography from "@styles/typography.module.css";
 import constants from "@utils/constants";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import * as styles from "./footer.module.css";
+import * as styles from "./socialMediaSection.module.css";
 
 const SocialMediaSection: React.FC = () => {
   return (

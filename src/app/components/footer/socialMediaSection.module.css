@@ -1,0 +1,12 @@
+.socialMediaSection {
+  display: grid;
+  justify-items: top start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socialMediaButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}

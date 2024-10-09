@@ -1,10 +1,19 @@
 .container {
-  position: relative;
+  display: flex;
   padding: 40px;
   background-color: var(--soft-grey);
   width: 100%;
   flex-direction: column;
+  justify-items: center;
+  gap: 40px;
+}
+
+.topSection {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
   gap: 40px;
 }
 
@@ -12,60 +21,11 @@
   color: var(--via-midia-black);
 }
 
-.container a {
-  text-decoration: none;
-  color: var(--via-midia-black);
-}
-
-.container a:hover {
-  text-decoration: underline;
-  text-decoration-color: var(
-    --via-midia-black
-  ); /* Change the underline color */
-}
-
-.topSection {
-  display: flex;
-  justify-content: space-between; /* Distributes space between child elements */
-  align-items: start; /* Aligns items vertically in the center */
-  flex-direction: row;
-  width: 100%;
-}
-
 .bottomSection {
   display: grid;
-  justify-items: center; /* Center items horizontally */
+  justify-items: center;
   flex-direction: column;
   width: 100%;
-  gap: 10px;
-}
-
-.socialMediaSection {
-  display: grid;
-  justify-items: top start;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.socialMediaButtons {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.pagesSection {
-  display: grid;
-  justify-items: start;
-  align-items: top;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.safeWebsiteSection {
-  display: flex;
-  justify-items: start;
-  align-items: center;
-  flex-direction: column;
   gap: 10px;
 }
 
@@ -86,11 +46,22 @@
   margin-left: 3px;
 }
 
-.contactSection {
-  display: flex;
-  width: 300px;
-  flex-direction: column;
-  justify-content: start;
-  align-content: center;
-  gap: 4px;
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+    padding: 40px;
+    background-color: var(--soft-grey);
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 40px;
+  }
+
+  .topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+    width: 100%;
+  }
 }
