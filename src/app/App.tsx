@@ -1,9 +1,9 @@
-import Footer from "@components/footer/Footer";
-import Navbar from "@components/navbar/Navbar";
+import Footer from "@components/layout/footer/Footer";
+import Navbar from "@components/layout/navbar/Navbar";
 import {
   NavbarContext,
   useNavbarContext,
-} from "@components/navbar/NavbarContext";
+} from "@components/layout/navbar/NavbarContext";
 import Home from "@pages/home/Home";
 import React, { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";

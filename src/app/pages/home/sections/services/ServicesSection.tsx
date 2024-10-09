@@ -1,4 +1,4 @@
-import ServiceCard from "@/app/components/cards/serviceCard/ServiceCard";
+import ServiceCard from "@/app/components/ui/cards/serviceCard/ServiceCard";
 import acmFacadeImage from "@images/acm-facade.jpg";
 import carWrapping from "@images/envelopamento-automotivo.jpg";
 import dimensionalLetterImage from "@images/letra-caixa.jpg";

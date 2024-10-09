@@ -1,4 +1,4 @@
-import Logo from "@components/logo/Logo";
+import Logo from "@/app/components/ui/logo/Logo";
 import constants from "@utils/constants";
 import React, { useEffect, useRef, useState } from "react";
 import { animated, useSpring } from "react-spring";
