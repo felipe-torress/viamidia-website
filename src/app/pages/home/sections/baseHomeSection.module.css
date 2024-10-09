@@ -7,6 +7,10 @@
   gap: 16px;
 }
 
+.baseHomeSection h2 {
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .baseHomeSection {
     display: flex;
