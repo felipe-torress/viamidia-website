@@ -1,0 +1,8 @@
+.glowingText {
+  display: flex;
+  justify-content: center;
+}
+
+.glowingText h1 {
+  text-shadow: 0 0 100px var(--purple-shadow);
+}

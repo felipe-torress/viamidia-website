@@ -2,7 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  margin-top: 32px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-right: 60px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    gap: 80px;
+  }
 }

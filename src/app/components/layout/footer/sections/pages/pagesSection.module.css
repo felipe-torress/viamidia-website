@@ -1,0 +1,25 @@
+.pagesSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pagesSection a {
+  text-decoration: none;
+  color: var(--via-midia-black);
+}
+
+.pagesSection a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--via-midia-black);
+}
+
+@media (min-width: 768px) {
+  .pagesSection {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+  }
+}

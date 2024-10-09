@@ -1,10 +1,12 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "@components/layout/footer/Footer";
+import Navbar from "@components/layout/navbar/Navbar";
+import {
+  NavbarContext,
+  useNavbarContext,
+} from "@components/layout/navbar/NavbarContext";
 import Home from "@pages/home/Home";
-import { NavbarContext } from "@components/navbar/NavbarContext";
-import Navbar from "@components/navbar/Navbar";
-import Footer from "@components/footer/Footer";
-import ChildComponent from "@components/child/ChildComponent";
+import React, { useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 const App = () => {
   return (
@@ -36,4 +38,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
     </NavbarContext.Provider>
   );
+};
+
+interface ChildComponentProps {
+  children: React.ReactNode;
+}
+
+const ChildComponent: React.FC<ChildComponentProps> = ({ children }) => {
+  const { navbarHeight } = useNavbarContext();
+
+  return <div style={{ paddingTop: navbarHeight }}>{children}</div>;
 };

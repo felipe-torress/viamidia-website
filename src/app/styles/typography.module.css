@@ -1,30 +1,32 @@
+
+/* Text Styles */
 .header1 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 72px;
-  line-height: 80px;
+  font-size: 48px;
+  line-height: 56px;
   color: var(--soft-grey);
 }
 
 .header1Meddon {
   font-family: "Meddon";
-  font-size: 72px;
+  font-size: 48px;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 25px;
   color: var(--electric-pink);
 }
 
 .header2 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 32px;
   color: var(--soft-grey);
 }
 
 .subHeader1 {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--soft-grey);
 }
 
@@ -38,7 +40,7 @@
 .bodyLarge {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--soft-grey);
 }
 
@@ -52,7 +54,7 @@
 .button {
   font-family: "Manrope", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--soft-grey);
 }
 
@@ -63,6 +65,74 @@
   color: var(--soft-grey);
 }
 
+@media (min-width: 768px) {
+  .header1 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    color: var(--soft-grey);
+  }
+
+  .header1Meddon {
+    font-family: "Meddon";
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 60px;
+    color: var(--electric-pink);
+  }
+
+  .header2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--soft-grey);
+  }
+
+  .subHeader1 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--soft-grey);
+  }
+
+  .subHeader2 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--soft-grey);
+  }
+
+  .bodyLarge {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--soft-grey);
+  }
+
+  .bodySmall {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--soft-grey);
+  }
+
+  .button {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--soft-grey);
+  }
+
+  .caption {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--soft-grey);
+  }
+}
+
+/* Weight Modifiers */
 .bold {
   font-weight: 700;
 }
@@ -71,32 +141,26 @@
   font-weight: 400;
 }
 
+/* Alignment Modifiers */
 .centeredText {
   text-align: center;
 }
 
+/* Color Modifiers */
 .linearGradientText {
-  background: linear-gradient(
-    to right,
-    #ff4ad6,
-    #ffc273
-  ); /* Define your gradient */
-  clip: text; /* Clip the background to the text */
-  background-clip: text; /* Clip the background to the text */
-  -background-clip: text; /* Clip the background to the text */
-  -webkit-background-clip: text; /* Clip the background to the text */
-  color: transparent; /* Make the text color transparent */
+  background: linear-gradient(to right, #ff4ad6, #ffc273);
+  clip: text;
+  background-clip: text;
+  -background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .radialGradientText {
-  background: radial-gradient(
-    circle,
-    #ffc273,
-    #ff4ad6
-  ); /* Define your gradient */
-  clip: text; /* Clip the background to the text */
-  background-clip: text; /* Clip the background to the text */
-  -background-clip: text; /* Clip the background to the text */
-  -webkit-background-clip: text; /* Clip the background to the text */
-  color: transparent; /* Make the text color transparent */
+  background: radial-gradient(circle, #ffc273, #ff4ad6);
+  clip: text;
+  background-clip: text;
+  -background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

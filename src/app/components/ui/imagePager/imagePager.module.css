@@ -1,0 +1,37 @@
+/* MOBILE STYLES */
+
+.imagePager {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.imagePagerImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* DESKTOP STYLES */
+
+@media (min-width: 768px) {
+  .imagePager {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .imagePagerImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

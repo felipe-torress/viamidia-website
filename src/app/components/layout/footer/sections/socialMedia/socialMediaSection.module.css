@@ -1,0 +1,29 @@
+.socialMediaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.socialMediaSection p {
+  text-align: center;
+}
+
+.socialMediaButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .socialMediaSection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+
+  .socialMediaSection p {
+    text-align: start;
+  }
+}

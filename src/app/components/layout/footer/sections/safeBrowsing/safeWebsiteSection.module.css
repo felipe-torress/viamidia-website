@@ -1,0 +1,7 @@
+.safeWebsiteSection {
+  display: flex;
+  justify-items: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
