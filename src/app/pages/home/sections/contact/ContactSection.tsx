@@ -1,6 +1,6 @@
 import ContactsCard from "@components/cards/ContactsCard";
 import React from "react";
-import BaseHomeSection from "./BaseHomeSection";
+import BaseHomeSection from "../base/BaseHomeSection";
 import * as styles from "./contactSection.module.css";
 
 const ContactUsSection: React.FC = () => {

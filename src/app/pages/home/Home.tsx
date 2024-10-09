@@ -1,8 +1,8 @@
-import ContactUsSection from "@/app/pages/home/sections/ContactSection";
+import ContactUsSection from "@/app/pages/home/sections/contact/ContactSection";
 import * as styles from "./home.module.css";
-import ClientsSection from "./sections/ClientsSection";
-import HomeTopSection from "./sections/HomeTopSection";
-import ServicesSection from "./sections/ServicesSection";
+import ClientsSection from "./sections/clients/ClientsSection";
+import HomeTopSection from "./sections/top/HomeTopSection";
+import ServicesSection from "./sections/services/ServicesSection";
 
 export default function Home() {
   return (

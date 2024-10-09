@@ -21,7 +21,7 @@ import LogoNovaExpress32px from "@svgs/logos/32px/logoNovaExpress32px.svg";
 import LogoOdontoCompany32px from "@svgs/logos/32px/logoOdontoCompany32px.svg";
 import LogoResolv32px from "@svgs/logos/32px/logoResolv32px.svg";
 import React from "react";
-import BaseHomeSection from "./BaseHomeSection";
+import BaseHomeSection from "../base/BaseHomeSection";
 import * as styles from "./clientsSection.module.css";
 import { useMediaQuery } from "@mui/material";
 

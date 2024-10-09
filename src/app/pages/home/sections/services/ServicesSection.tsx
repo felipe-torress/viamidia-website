@@ -5,7 +5,7 @@ import dimensionalLetterImage from "@images/letra-caixa.jpg";
 import * as colors from "@styles/colors.module.css";
 import * as typography from "@styles/typography.module.css";
 import React from "react";
-import BaseHomeSection from "./BaseHomeSection";
+import BaseHomeSection from "../base/BaseHomeSection";
 import * as styles from "./servicesSection.module.css";
 
 const ProductsSection: React.FC = () => (
