@@ -2,7 +2,7 @@ import colors from "@colors/colors";
 import constants from "@utils/constants";
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
-import RoundedButton from "./RoundedButton";
+import RoundedButton from "./roundedButton/RoundedButton";
 
 const InstagramButton: React.FC = () => {
   return (

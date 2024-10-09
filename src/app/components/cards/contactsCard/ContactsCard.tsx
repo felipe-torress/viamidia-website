@@ -1,7 +1,7 @@
 import InstagramButton from "@components/buttons/InstagramButton";
 import WazeButton from "@components/buttons/WazeButton";
 import WhatsAppButton from "@components/buttons/WhatsappButton";
-import PhoneNumber from "@components/texts/PhoneNumber";
+import PhoneNumber from "@/app/components/texts/phoneNumber/PhoneNumber";
 import * as colors from "@styles/colors.module.css";
 import * as typography from "@styles/typography.module.css";
 import classNames from "classnames";

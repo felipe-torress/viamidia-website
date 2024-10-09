@@ -2,7 +2,7 @@ import colors from "@colors/colors";
 import constants from "@utils/constants";
 import React from "react";
 import { FaWaze } from "react-icons/fa";
-import RoundedButton from "./RoundedButton";
+import RoundedButton from "./roundedButton/RoundedButton";
 
 const WazeButton: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import ImagePager from "@/app/components/imagePager/ImagePager";
-import GlowingText from "@/app/components/texts/GlowingText";
+import GlowingText from "@/app/components/texts/glowingText/GlowingText";
 import * as typography from "@styles/typography.module.css";
 import classNames from "classnames";
 import React from "react";

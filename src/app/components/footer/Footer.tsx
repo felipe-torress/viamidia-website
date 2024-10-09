@@ -1,10 +1,10 @@
 import * as typography from "@styles/typography.module.css";
 import Studio1001 from "@svgs/studio1001.svg";
 import * as styles from "./footer.module.css";
-import FooterContactSection from "./FooterContactSection";
-import PagesSection from "./PagesSection";
-import SafeWebsiteSection from "./SafeWebsiteSection";
-import SocialMediaSection from "./SocialMediaSection";
+import FooterContactSection from "./sections/contact/FooterContactSection";
+import PagesSection from "./sections/pages/PagesSection";
+import SafeWebsiteSection from "./sections/safeBrowsing/SafeWebsiteSection";
+import SocialMediaSection from "./sections/socialMedia/SocialMediaSection";
 import { useMediaQuery } from "@mui/material";
 
 const Footer: React.FC = () => {

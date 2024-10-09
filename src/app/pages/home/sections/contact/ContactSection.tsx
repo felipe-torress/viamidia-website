@@ -1,4 +1,4 @@
-import ContactsCard from "@components/cards/ContactsCard";
+import ContactsCard from "@/app/components/cards/contactsCard/ContactsCard";
 import React from "react";
 import BaseHomeSection from "../base/BaseHomeSection";
 import * as styles from "./contactSection.module.css";

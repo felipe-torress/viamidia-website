@@ -1,4 +1,4 @@
-import SocialMediaButton from "@components/buttons/SocialMediaButton";
+import SocialMediaButton from "@/app/components/buttons/socialMediaButton/SocialMediaButton";
 import Logo from "@components/logo/Logo";
 import * as typography from "@styles/typography.module.css";
 import constants from "@utils/constants";
