@@ -4,11 +4,13 @@ import React, { useEffect, useRef, useState } from "react";
 import { animated, useSpring } from "react-spring";
 import { useNavbarContext } from "./NavbarContext";
 import * as styles from "./navbar.module.css";
+import { useMediaQuery } from "@mui/material";
 
 const Navbar: React.FC = () => {
   const navbarRef = useRef<HTMLDivElement>(null);
   const { setNavbarHeight } = useNavbarContext();
   const [isVisible, setIsVisible] = useState(true);
+  const isLargeScreen = useMediaQuery("(min-width:768px)");
   let lastScrollY = 0;
 
   const handleScroll = () => {
@@ -56,29 +58,29 @@ const Navbar: React.FC = () => {
       className={styles.navbar}
       ref={navbarRef}
     >
-      <div className={styles.navbarLogo}>
-        <Logo />
-      </div>
-      <ul className={styles.navbarLinks}>
-        <li>
-          <a href="#servicesSection">Serviços</a>
-        </li>
-        <li>
-          <a href="#clientsSection">Clientes</a>
-        </li>
-        <li>
-          <a href="#contactSection">Contato</a>
-        </li>
-        <li>
-          <a
-            href={constants.whatsappUrl}
-            target="_blank"
-            className={styles.navbarLinkButton}
-          >
-            Orçamento
-          </a>
-        </li>
-      </ul>
+      <Logo />
+      {isLargeScreen && (
+        <ul className={styles.navbarLinks}>
+          <li>
+            <a href="#servicesSection">Serviços</a>
+          </li>
+          <li>
+            <a href="#clientsSection">Clientes</a>
+          </li>
+          <li>
+            <a href="#contactSection">Contato</a>
+          </li>
+          <li>
+            <a
+              href={constants.whatsappUrl}
+              target="_blank"
+              className={styles.navbarLinkButton}
+            >
+              Orçamento
+            </a>
+          </li>
+        </ul>
+      )}
     </animated.nav>
   );
 };
