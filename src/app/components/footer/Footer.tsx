@@ -5,6 +5,7 @@ import FooterContactSection from "./FooterContactSection";
 import PagesSection from "./PagesSection";
 import SafeWebsiteSection from "./SafeWebsiteSection";
 import SocialMediaSection from "./SocialMediaSection";
+import { useMediaQuery } from "@mui/material";
 
 const Footer: React.FC = () => {
   return (
@@ -29,15 +30,25 @@ const TopSection: React.FC = () => {
 };
 
 const BottomSection: React.FC = () => {
+  const isLargeScreen = useMediaQuery("(min-width:768px)");
+
   return (
     <div className={styles.bottomSection}>
       <div className={styles.createdBy}>
         <p className={typography.caption}>Criado por</p>
         <Studio1001 />
       </div>
-      <p className={typography.caption}>
-        Via Midia Comunicação Visual - CNPJ 33.565.366/0001-67
-      </p>
+      {isLargeScreen ? (
+        <p className={typography.caption}>
+          Via Midia Comunicação Visual • CNPJ 33.565.366/0001-67
+        </p>
+      ) : (
+        <p className={typography.caption}>
+          Via Midia Comunicação Visual
+          <br />
+          CNPJ 33.565.366/0001-67
+        </p>
+      )}
     </div>
   );
 };

@@ -1,9 +1,8 @@
 .pagesSection {
-  display: grid;
-  justify-items: start;
-  align-items: top;
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
 }
 
 .pagesSection a {
@@ -14,4 +13,13 @@
 .pagesSection a:hover {
   text-decoration: underline;
   text-decoration-color: var(--via-midia-black);
+}
+
+@media (min-width: 768px) {
+  .pagesSection {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+  }
 }

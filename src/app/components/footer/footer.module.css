@@ -4,7 +4,7 @@
   background-color: var(--soft-grey);
   width: 100%;
   flex-direction: column;
-  justify-items: center;
+  align-items: center;
   gap: 40px;
 }
 
@@ -27,6 +27,10 @@
   flex-direction: column;
   width: 100%;
   gap: 10px;
+}
+
+.bottomSection p {
+  text-align: center;
 }
 
 .createdBy {

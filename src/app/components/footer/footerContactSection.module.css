@@ -1,8 +1,9 @@
 .contactSection {
   display: flex;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   flex-direction: column;
   justify-content: start;
   align-content: center;
-  gap: 4px;
+  gap: 16px;
 }
