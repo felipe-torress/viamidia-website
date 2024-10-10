@@ -30,12 +30,12 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone [REPOSITORY_URL]
+   git clone https://github.com/felipe-torress/viamidia-website.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd [PROJECT_DIRECTORY]
+   cd viamidia-website
    ```
 3. Install the dependencies:
    ```bash
