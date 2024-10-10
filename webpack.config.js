@@ -30,6 +30,18 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        test: /\.ico$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/', // Optional: to place in an 'assets' folder in dist
+            },
+          },
+        ],
+      },
+      {
         test: /\.module\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -74,6 +86,7 @@ module.exports = {
       inject: true,
       filename: "index.html",
       template: "./public/index.html", // Path to your template HTML
+      favicon: "./public/logo.ico", // Path to your favicon
       minify: false,
     }),
     new MiniCssExtractPlugin(),

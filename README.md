@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# viamidia-website
 
-## Getting Started
+## Description
 
-First, run the development server:
+viamidia-website is a website developed for Via Midia, a family-owned business specializing in visual communication. This project aims to establish an online presence for the company and enhance its credibility with a dedicated website.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Responsive Design:** The website is designed to adapt to various screen sizes, ensuring a smooth user experience across devices.
+- **Dynamic Components:** Built with ReactJS, the site features reusable components for efficient development and maintenance.
+- **Easy Navigation:** Intuitive navigation structure to help users find information quickly.
+- **UI/UX Design:** The layout and design were created in Figma, focusing on user-centric design principles.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Frontend:**
 
-## Learn More
+  - ReactJS
+  - TypeScript
+  - CSS
+  - Webpack
 
-To learn more about Next.js, take a look at the following resources:
+- **Design:**
+  - Figma
+  - Illustrator
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To run this project locally, follow these steps:
 
-## Deploy on Vercel
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/felipe-torress/viamidia-website.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Navigate to the project directory:
+   ```bash
+   cd viamidia-website
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+
+Open your browser and go to `http://localhost:3000` to view the website.
+
+
+## Acknowledgments
+
+- Special thanks to Via Midia for the opportunity to work on this project.
+- Inspiration from various online resources and documentation.
+
+## Links
+
+- [Figma Layout](https://www.figma.com/design/YJSmtIofg0VGsUJEVmXCT2/Via-Midia-Website?node-id=0-1&t=I6m5MxV1uHfuzOg6-1)
